@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -18,11 +19,20 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        float directionX = Input.GetAxisRaw("Horizontal");
+
+        rb.velocity = new Vector2(directionX * 7f, rb.velocity.y);
+
         if(Input.GetButtonDown("Jump"))
         {
-            rb.velocity = new Vector3(0, 14f, 0);
+            rb.velocity = new Vector2(rb.velocity.x,5);
             
         }
+
+        //if(Input.GetButtonDown())
+        //{
+
+        //}
         
     }
 }
