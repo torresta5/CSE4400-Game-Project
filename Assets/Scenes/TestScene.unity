@@ -209,11 +209,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 347034209507562768, guid: b3e957c3cd6ab4d4f986aa3ead08fac7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.92
+      value: 18.61
       objectReference: {fileID: 0}
     - target: {fileID: 347034209507562768, guid: b3e957c3cd6ab4d4f986aa3ead08fac7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.84
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 347034209507562768, guid: b3e957c3cd6ab4d4f986aa3ead08fac7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -405,19 +405,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 347034209507562768, guid: b3e957c3cd6ab4d4f986aa3ead08fac7, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.1258883
+      value: 6.2902565
       objectReference: {fileID: 0}
     - target: {fileID: 347034209507562768, guid: b3e957c3cd6ab4d4f986aa3ead08fac7, type: 3}
       propertyPath: m_LocalScale.y
-      value: 7.9121127
+      value: 0.35790607
       objectReference: {fileID: 0}
     - target: {fileID: 347034209507562768, guid: b3e957c3cd6ab4d4f986aa3ead08fac7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.57
+      value: 10.6456
       objectReference: {fileID: 0}
     - target: {fileID: 347034209507562768, guid: b3e957c3cd6ab4d4f986aa3ead08fac7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.63
+      value: 0.7261
       objectReference: {fileID: 0}
     - target: {fileID: 347034209507562768, guid: b3e957c3cd6ab4d4f986aa3ead08fac7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -449,6 +449,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 347034209507562768, guid: b3e957c3cd6ab4d4f986aa3ead08fac7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 347034209507562770, guid: b3e957c3cd6ab4d4f986aa3ead08fac7, type: 3}
+      propertyPath: m_SideArc
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 347034209507562770, guid: b3e957c3cd6ab4d4f986aa3ead08fac7, type: 3}
+      propertyPath: m_UseOneWay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 347034209507562770, guid: b3e957c3cd6ab4d4f986aa3ead08fac7, type: 3}
+      propertyPath: m_SurfaceArc
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 347034209507562770, guid: b3e957c3cd6ab4d4f986aa3ead08fac7, type: 3}
+      propertyPath: m_UseSideFriction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 347034209507562770, guid: b3e957c3cd6ab4d4f986aa3ead08fac7, type: 3}
+      propertyPath: m_UseOneWayGrouping
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 347034209507562774, guid: b3e957c3cd6ab4d4f986aa3ead08fac7, type: 3}
