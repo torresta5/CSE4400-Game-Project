@@ -5,13 +5,16 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] private LayerMask jumpableGround;
+    [SerializeField] private float jumpTime = 0.5f;
 
     private Rigidbody2D rb;
     private BoxCollider2D coll;
+    private bool isJumping;
+    private bool isFalling;
+    private float jumpTimeCounter;
 
     public int jumpSpeed;
-
-    [SerializeField] private LayerMask jumpableGround;
 
     // Start is called before the first frame update
     private void Start()
@@ -27,12 +30,42 @@ public class PlayerController : MonoBehaviour
 
         rb.velocity = new Vector2(directionX * 7f, rb.velocity.y);
 
-        if(Input.GetButtonDown("Jump") && IsGrounded())
+        #region Jumping
+
+        if (Input.GetButtonDown("Jump") && IsGrounded())
         {
+            isJumping = true;
+            jumpTimeCounter = jumpTime;
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
-            
+
         }
-        
+
+        if (Input.GetButton("Jump"))
+        {
+            if (jumpTimeCounter > 0 && isJumping)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
+                jumpTimeCounter -= Time.deltaTime;
+            }
+            else if (jumpTimeCounter == 0)
+            {
+                isFalling = true;
+                isJumping = false;
+            }
+            else
+            {
+                isJumping = false;
+            }
+
+        }
+
+        if (Input.GetButtonUp("Jump"))
+        {
+            isFalling = true;
+            isJumping = false;
+        }
+
+        #endregion
     }
 
     private bool IsGrounded()
