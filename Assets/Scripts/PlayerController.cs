@@ -78,11 +78,7 @@ public class PlayerController : MonoBehaviour
                     rb.gravityScale = 5;
                     isFalling = false;
                 }
-            } else if(IsGrounded())
-                {
-                    rb.gravityScale = 5;
-                    isFalling = false;
-                }
+            }
         }
 
         if(!IsGrounded())
