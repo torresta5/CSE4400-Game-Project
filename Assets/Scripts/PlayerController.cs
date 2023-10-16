@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
+            rb.gravityScale = 5;
             isJumping = true;
             jumpTimeCounter = jumpTime;
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
@@ -64,6 +65,25 @@ public class PlayerController : MonoBehaviour
         {
             isFalling = true;
             isJumping = false;
+        }
+
+        if(isFalling)
+        {
+            
+            if(rb.gravityScale < 6)
+            {
+                rb.gravityScale += Time.deltaTime;
+                if (IsGrounded())
+                {
+                    rb.gravityScale = 5;
+                    isFalling = false;
+                }
+            }
+        }
+
+        if(!IsGrounded())
+        {
+            isFalling = true;
         }
 
         #endregion
