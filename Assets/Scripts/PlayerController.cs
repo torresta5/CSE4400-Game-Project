@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     private bool isDashing;
     private float dashingPower = 20f;
     private float dashingTime = 0.2f;
-    private float dashingCooldown = 2f;
+    private float dashingCooldown = 3f;
     private bool isFacingRight = true;
 
 
@@ -116,6 +116,14 @@ public class PlayerController : MonoBehaviour
         #endregion
 
         Flip();
+    }
+
+    private void FixedUpdate()
+    {
+        if(isDashing)
+        {
+            return;
+        }
     }
 
     #region Dashing Function
