@@ -1,9 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-//using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
-using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class PlayerController : MonoBehaviour
 {
@@ -15,7 +13,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private BoxCollider2D coll;
     private float directionX;
-    private SpriteRenderer sprite;
+
     private bool isJumping;
     private bool isFalling;
     private float jumpTimeCounter;
@@ -33,7 +31,6 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        sprite = GetComponent<SpriteRenderer>();
         coll = GetComponent<BoxCollider2D>();
     }
 
