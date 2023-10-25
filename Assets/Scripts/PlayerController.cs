@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     private float dashingTime = 0.2f;
     private float dashingCooldown = 3f;
     private bool isFacingRight = true;
+    private Animator anim;
 
 
     public int jumpSpeed;
@@ -32,6 +33,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<BoxCollider2D>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -54,6 +56,7 @@ public class PlayerController : MonoBehaviour
             isJumping = true;
             jumpTimeCounter = jumpTime;
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
+            anim.SetBool("jumping", true);
 
         }
 
@@ -90,6 +93,7 @@ public class PlayerController : MonoBehaviour
                 rb.gravityScale += Time.deltaTime;
                 if (IsGrounded())
                 {
+                    anim.SetBool("jumping", false);
                     rb.gravityScale = 5;
                     isFalling = false;
                 }
@@ -108,6 +112,23 @@ public class PlayerController : MonoBehaviour
         if(Input.GetButtonDown("Dash") && canDash)
         {
             StartCoroutine(Dash());
+        }
+
+        #endregion
+
+        #region Animations
+
+        if (directionX > 0)
+        {
+            anim.SetBool("running", true);
+        }
+        else if(directionX < 0)
+        {
+            anim.SetBool("running", true);
+        }
+        else
+        {
+            anim.SetBool("running", false);
         }
 
         #endregion
