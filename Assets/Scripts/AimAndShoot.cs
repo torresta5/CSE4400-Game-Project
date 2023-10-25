@@ -38,6 +38,11 @@ public class AimAndShoot : MonoBehaviour
         {
             weapon.transform.up *= -1;
         }
+        
+        if(weapon.transform.position.x < 0  && mousePosition.x > 0) 
+        {
+            weapon.transform.up *= -1;
+        }
     }
     
 }
