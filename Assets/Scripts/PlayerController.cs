@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
 
         directionX = Input.GetAxisRaw("Horizontal");
 
-        rb.velocity = new Vector2(directionX * 7f, rb.velocity.y);
+        rb.velocity = new Vector2(directionX * 15f, rb.velocity.y);
 
         #region Jumping
 
@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
             isJumping = true;
             jumpTimeCounter = jumpTime;
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
-            anim.SetBool("jumping", true);
+            //anim.SetBool("jumping", true);
 
         }
 
@@ -87,12 +87,13 @@ public class PlayerController : MonoBehaviour
 
         if (isFalling)
         {
-
+            anim.SetBool("jumping", true);
             if (rb.gravityScale < 6)
             {
                 rb.gravityScale += Time.deltaTime;
                 if (IsGrounded())
                 {
+                    anim.SetBool("falling", false);
                     anim.SetBool("jumping", false);
                     rb.gravityScale = 5;
                     isFalling = false;
