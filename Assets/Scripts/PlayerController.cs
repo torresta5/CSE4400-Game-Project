@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
-
     [SerializeField] private LayerMask jumpableGround;
     [SerializeField] private float jumpTime = 0.5f;
 
