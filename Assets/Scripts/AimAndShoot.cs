@@ -4,12 +4,25 @@ using UnityEngine;
 
 public class AimAndShoot : MonoBehaviour
 {
-    public GameObject weapon;
-    public GameObject bullet;
-    
+    [SerializeField] private GameObject gun;
+    [SerializeField] private GameObject bullet;
+    [SerializeField] private GameObject[] weapons;
+
+    [SerializeField] private int numWeapons;
+    [SerializeField] private int currentWeapon = 0;
+
+    [SerializeField] private Transform[] bulletSpawn;
+
     private Vector2 mousePosition;
     private Vector2 direction;
-    
+
+    private bool canShoot = true;
+
+    [SerializeField] private float PISTOLCOOLDOWN = 1f;
+    [SerializeField] private float LMGCOOLDOWN = 0.25f;
+    [SerializeField] private float SHOTGUNCOOLDOWN = 2f;
+    private float timeSinceShot = 0;
+
     private void Update()
     {
         RotateToMouse();
@@ -23,25 +36,25 @@ public class AimAndShoot : MonoBehaviour
     private void RotateToMouse()
     {
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        direction = mousePosition - (Vector2)weapon.transform.position;
-        weapon.transform.right = direction;
+        direction = mousePosition - (Vector2)gun.transform.position;
+        gun.transform.right = direction;
     }
 
     private void Shoot()
     {
-            Instantiate(bullet, weapon.transform.position, weapon.transform.rotation);
+            Instantiate(bullet, gun.transform.position, gun.transform.rotation);
     }
 
     private void FlipWeapon()
     { 
-        if ((weapon.transform.position.x < 0) && (mousePosition.x < 0)) 
+        if ((gun.transform.position.x < 0) && (mousePosition.x < 0)) 
         {
-            weapon.transform.up *= -1;
+            gun.transform.up *= -1;
         }
         
-        if(weapon.transform.position.x < 0  && mousePosition.x > 0) 
+        if(gun.transform.position.x < 0  && mousePosition.x > 0) 
         {
-            weapon.transform.up *= -1;
+            gun.transform.up *= -1;
         }
     }
     
