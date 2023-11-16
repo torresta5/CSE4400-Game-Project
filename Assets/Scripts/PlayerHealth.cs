@@ -49,4 +49,13 @@ public class PlayerHealth : MonoBehaviour
             }
         }
     }
+
+    public void takeDamage()
+    {
+        health -= 1;
+        if(health <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
