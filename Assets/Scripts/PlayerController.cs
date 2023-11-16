@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if(isDashing)
+        if (isDashing)
         {
             return;
         }
@@ -117,7 +117,7 @@ public class PlayerController : MonoBehaviour
 
         #region Dashing Execution
 
-        if(Input.GetButtonDown("Dash") && canDash)
+        if (Input.GetButtonDown("Dash") && canDash)
         {
             StartCoroutine(Dash());
         }
@@ -130,7 +130,7 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetBool("running", true);
         }
-        else if(directionX < 0)
+        else if (directionX < 0)
         {
             anim.SetBool("running", true);
         }
@@ -146,7 +146,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(isDashing)
+        if (isDashing)
         {
             return;
         }
@@ -177,12 +177,20 @@ public class PlayerController : MonoBehaviour
 
     private void Flip()
     {
-        if (isFacingRight && directionX < 0f || !isFacingRight && directionX > 0f)
+        if (isFacingRight && mouseWorldPosition.x < transform.position.x || !isFacingRight && mouseWorldPosition.x > transform.position.x)
         {
             Vector3 localScale = transform.localScale;
             isFacingRight = !isFacingRight;
             localScale.x *= -1f;
             transform.localScale = localScale;
         }
+
+        //if (isFacingRight && directionX < 0f || !isFacingRight && directionX > 0f)
+        //{
+        //    Vector3 localScale = transform.localScale;
+        //    isFacingRight = !isFacingRight;
+        //    localScale.x *= -1f;
+        //    transform.localScale = localScale;
+        //}
     }
 }
