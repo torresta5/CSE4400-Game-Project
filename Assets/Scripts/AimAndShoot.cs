@@ -7,7 +7,11 @@ public class AimAndShoot : MonoBehaviour
     [SerializeField] private GameObject gun;
     [SerializeField] private GameObject bullet;
     [SerializeField] private GameObject[] weapons;
-
+    
+    [SerializeField] private float PISTOLCOOLDOWN = 1f;
+    [SerializeField] private float LMGCOOLDOWN = 0.25f;
+    [SerializeField] private float SHOTGUNCOOLDOWN = 2f;
+    
     [SerializeField] private int numWeapons;
     [SerializeField] private int currentWeapon = 0;
 
@@ -18,9 +22,6 @@ public class AimAndShoot : MonoBehaviour
 
     private bool canShoot = true;
 
-    [SerializeField] private float PISTOLCOOLDOWN = 1f;
-    [SerializeField] private float LMGCOOLDOWN = 0.25f;
-    [SerializeField] private float SHOTGUNCOOLDOWN = 2f;
     private float timeSinceShot = 0;
 
     private void Start()
