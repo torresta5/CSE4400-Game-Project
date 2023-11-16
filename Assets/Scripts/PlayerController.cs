@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private LayerMask jumpableGround;
     [SerializeField] private float jumpTime = 0.5f;
+    //[SerializeField] private Camera mainCamera;
 
     [HideInInspector] public bool isFacingLeft;
 
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
     private float dashingCooldown = 3f;
     private bool isFacingRight = true;
     private Animator anim;
+    //private Vector3 mouseWorldPosition;
 
 
     public int jumpSpeed;
@@ -43,6 +45,11 @@ public class PlayerController : MonoBehaviour
         {
             return;
         }
+
+        //mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        //mouseWorldPosition.z = 0;
+
+        //Debug.Log(mouseWorldPosition);
 
         directionX = Input.GetAxisRaw("Horizontal");
 
