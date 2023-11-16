@@ -128,6 +128,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7a90ff5b48b0d4a921080d3c4ecd03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  patrolPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  moveSpeed: 2
+  patrolDestination: 0
 --- !u!1 &6702560725904881506
 GameObject:
   m_ObjectHideFlags: 0
