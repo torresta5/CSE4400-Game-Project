@@ -570,6 +570,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   jumpTime: 0.25
+  mainCamera: {fileID: 6027854100897693863}
   isFacingLeft: 0
   jumpSpeed: 10
 --- !u!61 &611306924
@@ -2763,6 +2764,11 @@ PrefabInstance:
 --- !u!4 &6027854100897693784 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7730603302283847043, guid: 746e971c3634b3c4ba97a809690c88db, type: 3}
+  m_PrefabInstance: {fileID: 4102677970675869147}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &6027854100897693863 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7730603302283847036, guid: 746e971c3634b3c4ba97a809690c88db, type: 3}
   m_PrefabInstance: {fileID: 4102677970675869147}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6027854101575868965
