@@ -91,7 +91,7 @@ public class AimAndShoot : MonoBehaviour
         {
             if(currentWeapon ==2)
             {
-                for(int i = currentWeapon; i < weapons.Length; i++)
+                for(int i = currentWeapon; i < bulletSpawn.Length; i++)
                 {
                     Instantiate(bullet, bulletSpawn[i].position, bulletSpawn[i].transform.rotation);
                 }
