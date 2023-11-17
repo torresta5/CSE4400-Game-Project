@@ -87,9 +87,19 @@ public class AimAndShoot : MonoBehaviour
                     break;
             }
         }
-        if (Input.GetMouseButtonDown(0) && canShoot)
+        if (Input.GetButton("Fire1") && canShoot)
         {
-            Instantiate(bullet, bulletSpawn[currentWeapon].position, gun.transform.rotation);
+            if(currentWeapon ==2)
+            {
+                for(int i = currentWeapon; i < weapons.Length; i++)
+                {
+                    Instantiate(bullet, bulletSpawn[i].position, bulletSpawn[i].transform.rotation);
+                }
+            }
+            else
+            {
+                Instantiate(bullet, bulletSpawn[currentWeapon].position, gun.transform.rotation);
+            }
             canShoot = false;
         }
     }
