@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AimAndShoot : MonoBehaviour
 {
     [SerializeField] private GameObject gun;
     [SerializeField] private GameObject bullet;
     [SerializeField] private GameObject[] weapons;
+
+    [SerializeField] private Image equipedWeapon;
+
+    [SerializeField] private Sprite[] inventory;
     
     [SerializeField] private float PISTOLCOOLDOWN = 1f;
     [SerializeField] private float LMGCOOLDOWN = 0.25f;
@@ -139,5 +144,6 @@ public class AimAndShoot : MonoBehaviour
             currentWeapon = 2;
         }
         gun = weapons[currentWeapon];
+        equipedWeapon.sprite = inventory[currentWeapon];
     }
 }
