@@ -715,9 +715,17 @@ PrefabInstance:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 6027854101119121625}
+    - target: {fileID: 5062017260859174906, guid: f691f1b07c89d134ba10c6d590b69f91, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5909220046021138818, guid: f691f1b07c89d134ba10c6d590b69f91, type: 3}
       propertyPath: m_Name
       value: Ranged Hunter
+      objectReference: {fileID: 0}
+    - target: {fileID: 5909220046021138818, guid: f691f1b07c89d134ba10c6d590b69f91, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8327485759122334031, guid: f691f1b07c89d134ba10c6d590b69f91, type: 3}
       propertyPath: m_RootOrder
