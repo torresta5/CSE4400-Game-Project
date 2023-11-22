@@ -1395,15 +1395,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6027854100897693784, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.00000021610674
+      value: -0.0000004322135
       objectReference: {fileID: 0}
     - target: {fileID: 6027854100897693784, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.2379347
+      value: 2.8892055
       objectReference: {fileID: 0}
     - target: {fileID: 6027854100897693863, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
       propertyPath: orthographic size
-      value: 7
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6333876914014541454, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
       propertyPath: currentWeapon
@@ -1503,11 +1503,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7500885120466200167, guid: 6ee60b61d7013044e9b9a89f3670e047, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.00000047683716
+      value: -0.0000009536743
       objectReference: {fileID: 0}
     - target: {fileID: 7500885120466200167, guid: 6ee60b61d7013044e9b9a89f3670e047, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.9799998
+      value: 11.179999
       objectReference: {fileID: 0}
     - target: {fileID: 7500885120466200167, guid: 6ee60b61d7013044e9b9a89f3670e047, type: 3}
       propertyPath: m_LocalPosition.z

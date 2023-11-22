@@ -50,7 +50,7 @@ public class AimAndShoot : MonoBehaviour
         SwitchWeapons();
         RotateToMouse();
         Shoot();
-        FlipWeapon();
+        //FlipWeapon();
     }
 
     private void RotateToMouse()
