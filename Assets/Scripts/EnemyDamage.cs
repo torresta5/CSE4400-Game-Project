@@ -10,6 +10,13 @@ public class EnemyDamage : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
+            Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
+
+            //Stop Moving/Translating
+            rb.velocity = Vector3.zero;
+
+            //Stop rotating
+            rb.angularVelocity = Vector3.zero;
             playerHealth.takeDamage();
         }
     }

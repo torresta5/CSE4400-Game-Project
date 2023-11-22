@@ -437,16 +437,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3e957c3cd6ab4d4f986aa3ead08fac7, type: 3}
---- !u!4 &490080533 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1884800264508313109, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
-  m_PrefabInstance: {fileID: 6027854101119121624}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &608647214 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2153084522541365390, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
-  m_PrefabInstance: {fileID: 6027854101119121624}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &611306922 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2326326966225551799, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
@@ -534,11 +524,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &708934481 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8646857523309008668, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
-  m_PrefabInstance: {fileID: 6027854101119121624}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &710899022 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6320070454673147706, guid: be422bda44adf4a4198942e5d19d3c12, type: 3}
@@ -645,11 +630,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &1371418866 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8976133593826529478, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
-  m_PrefabInstance: {fileID: 6027854101119121624}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1392283734 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1312045620652605566, guid: be422bda44adf4a4198942e5d19d3c12, type: 3}
@@ -784,11 +764,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &2087579004 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8097696814965535050, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
-  m_PrefabInstance: {fileID: 6027854101119121624}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &347034209924500036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1100,10 +1075,6 @@ PrefabInstance:
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6333876914014541454, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
-      propertyPath: Loadout.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6333876914014541454, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
       propertyPath: Loadout.Array.data[0]
       value: 
       objectReference: {fileID: 1972340130}
@@ -1115,30 +1086,6 @@ PrefabInstance:
       propertyPath: Loadout.Array.data[2]
       value: 
       objectReference: {fileID: 1392283734}
-    - target: {fileID: 6333876914014541454, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
-      propertyPath: bulletSpawn.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6333876914014541454, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
-      propertyPath: bulletSpawn.Array.data[2]
-      value: 
-      objectReference: {fileID: 2087579004}
-    - target: {fileID: 6333876914014541454, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
-      propertyPath: bulletSpawn.Array.data[3]
-      value: 
-      objectReference: {fileID: 1371418866}
-    - target: {fileID: 6333876914014541454, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
-      propertyPath: bulletSpawn.Array.data[4]
-      value: 
-      objectReference: {fileID: 708934481}
-    - target: {fileID: 6333876914014541454, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
-      propertyPath: bulletSpawn.Array.data[5]
-      value: 
-      objectReference: {fileID: 608647214}
-    - target: {fileID: 6333876914014541454, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
-      propertyPath: bulletSpawn.Array.data[6]
-      value: 
-      objectReference: {fileID: 490080533}
     - target: {fileID: 7730603303017544723, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
       propertyPath: orthographic size
       value: 7
