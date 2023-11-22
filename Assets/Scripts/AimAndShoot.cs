@@ -1,12 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AimAndShoot : MonoBehaviour
 {
     [SerializeField] private GameObject gun;
     [SerializeField] private GameObject bullet;
     [SerializeField] private GameObject[] weapons;
+
+    //[SerializeField] private Image equipedWeapon;
+    [SerializeField] private Image[] Loadout;
+
+
+    [SerializeField] private Sprite[] inventory;
     
     [SerializeField] private float PISTOLCOOLDOWN = 1f;
     [SerializeField] private float LMGCOOLDOWN = 0.25f;
@@ -30,10 +37,11 @@ public class AimAndShoot : MonoBehaviour
         for (int i = 0; i < numWeapons; i++)
         {
             weapons[i].SetActive(false);
+            Loadout[i].color = new (1f, 1f, 1f, 0.5f);
         }
 
         weapons[0].SetActive(true);
-
+        Loadout[0].color = new(1f, 1f, 1f, 1f);
         gun = weapons[0];
     }
 
@@ -123,21 +131,27 @@ public class AimAndShoot : MonoBehaviour
         {
             weapons[0].SetActive(true);
             weapons[currentWeapon].SetActive(false);
+            Loadout[currentWeapon].color = new(1f, 1f, 1f, 0.5f);
             currentWeapon = 0;
+            
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha2) && currentWeapon != 1)
         {
             weapons[1].SetActive(true);
             weapons[currentWeapon].SetActive(false);
+            Loadout[currentWeapon].color = new(1f, 1f, 1f, 0.5f);
             currentWeapon = 1;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3) && currentWeapon != 2)
         {
             weapons[2].SetActive(true);
             weapons[currentWeapon].SetActive(false);
+            Loadout[currentWeapon].color = new(1f, 1f, 1f, 0.5f);
             currentWeapon = 2;
         }
         gun = weapons[currentWeapon];
+        //equipedWeapon.sprite = inventory[currentWeapon];
+        Loadout[currentWeapon].color = new (1f, 1f, 1f, 1f);
     }
 }
