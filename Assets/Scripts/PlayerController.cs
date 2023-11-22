@@ -27,8 +27,11 @@ public class PlayerController : MonoBehaviour
     private Animator anim;
     private Vector3 mouseWorldPosition;
 
-
     public int jumpSpeed;
+    public float KBForce;
+    public float KBCounter;
+    public float KBTotalTime;
+    public bool knockFromRight;
 
     // Start is called before the first frame update
     private void Start()
@@ -53,7 +56,23 @@ public class PlayerController : MonoBehaviour
 
         directionX = Input.GetAxisRaw("Horizontal");
 
-        rb.velocity = new Vector2(directionX * 15f, rb.velocity.y);
+        if(KBCounter <= 0)
+        {
+            rb.velocity = new Vector2(directionX * 15f, rb.velocity.y);
+        }
+        else
+        {
+            if(knockFromRight == true)
+            {
+                rb.velocity = new Vector2(-KBForce, KBForce);
+            }
+            if(knockFromRight == false)
+            {
+                rb.velocity = new Vector2(KBForce, KBForce);
+            }
+
+            KBCounter -= Time.deltaTime;
+        }
 
         #region Jumping
 

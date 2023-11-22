@@ -5,18 +5,21 @@ using UnityEngine;
 public class EnemyDamage : MonoBehaviour
 {
     public PlayerHealth playerHealth;
+    public PlayerController playerController;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {
-            Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
-
-            //Stop Moving/Translating
-            rb.velocity = Vector3.zero;
-
-            //Stop rotating
-            rb.angularVelocity = Vector3.zero;
+            playerController.KBCounter = playerController.KBTotalTime;
+            if(collision.transform.position.x <= transform.position.x)
+            {
+                playerController.knockFromRight = true;
+            }
+            if (collision.transform.position.x >= transform.position.x)
+            {
+                playerController.knockFromRight = false;
+            }
             playerHealth.takeDamage();
         }
     }
