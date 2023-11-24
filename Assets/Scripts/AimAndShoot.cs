@@ -7,12 +7,9 @@ public class AimAndShoot : MonoBehaviour
 {
     [SerializeField] private GameObject gun;
     [SerializeField] private GameObject bullet;
+
     [SerializeField] private GameObject[] weapons;
-
-    //[SerializeField] private Image equipedWeapon;
     [SerializeField] private Image[] Loadout;
-
-
     [SerializeField] private Sprite[] inventory;
     
     [SerializeField] private float PISTOLCOOLDOWN = 1f;
@@ -50,14 +47,19 @@ public class AimAndShoot : MonoBehaviour
         SwitchWeapons();
         RotateToMouse();
         Shoot();
-        //FlipWeapon();
     }
 
     private void RotateToMouse()
     {
+
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         direction = mousePosition - (Vector2)gun.transform.position;
         gun.transform.right = direction;
+        
+        if (transform.localScale.x < 0) 
+        {
+            gun.transform.right *= -1;
+        }
     }
 
     private void Shoot()
@@ -112,19 +114,6 @@ public class AimAndShoot : MonoBehaviour
         }
     }
 
-    private void FlipWeapon()
-    { 
-        if ((gun.transform.position.x < 0) && (mousePosition.x < 0)) 
-        {
-            gun.transform.up *= -1;
-        }
-        
-        if(gun.transform.position.x < 0  && mousePosition.x > 0) 
-        {
-            gun.transform.up *= -1;
-        }
-    }
-
     private void SwitchWeapons() 
     {
         if (Input.GetKeyDown(KeyCode.Alpha1) && currentWeapon != 0)
@@ -151,7 +140,6 @@ public class AimAndShoot : MonoBehaviour
             currentWeapon = 2;
         }
         gun = weapons[currentWeapon];
-        //equipedWeapon.sprite = inventory[currentWeapon];
         Loadout[currentWeapon].color = new (1f, 1f, 1f, 1f);
     }
 }

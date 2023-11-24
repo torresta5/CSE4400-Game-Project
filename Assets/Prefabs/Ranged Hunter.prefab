@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7363090673647274407}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &676023719452701329
 SpriteRenderer:
@@ -112,12 +112,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993131386117329550}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.02, y: 0.7663, z: 0}
-  m_LocalScale: {x: 1, y: 2.5327153, z: 1}
+  m_LocalPosition: {x: 15.43, y: 9.0543, z: 0}
+  m_LocalScale: {x: 1, y: 3.8450828, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2550686942733535035}
   - {fileID: 2008437910054906479}
+  - {fileID: 2550686942733535035}
   m_Father: {fileID: 8327485759122334031}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -215,7 +215,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8437a45c6699ec40a97cc27ef07bd05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hunterGun: {fileID: 0}
+  hunterGun: {fileID: 8310811194728762096}
+  bullet: {fileID: 1758404581807429377, guid: d0a310e745b3d2f4bac429a96f17a61b, type: 3}
+  bulletSpawn: {fileID: 7436140587985998683}
 --- !u!1 &4353654660643073888
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,13 +328,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8310811194728762096}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5799994, y: 0.15939409, z: -9.594526}
+  m_LocalPosition: {x: 1.5799994, y: 0.15939409, z: 0}
   m_LocalScale: {x: 1, y: 0.39483318, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7436140587985998683}
   m_Father: {fileID: 7363090673647274407}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &107373640859478690
 SpriteRenderer:

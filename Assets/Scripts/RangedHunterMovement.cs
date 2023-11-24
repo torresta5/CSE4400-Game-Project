@@ -7,15 +7,20 @@ public class RangedHunterMovement : MonoBehaviour
     private GameObject player;
 
     [SerializeField] GameObject hunterGun;
+    [SerializeField] GameObject bullet;
+
+    [SerializeField] Transform bulletSpawn;
 
     private Rigidbody2D rgbd;
 
     private Vector2 direction;
 
-    private float moveSpeed = 5;
-    private float patrolPoint1;
-    private float patrolPoint2;
 
+    private float attackTime;
+    private float moveSpeed = 5;
+    private float patrolPoint;
+
+    private bool canShoot = true;
     private bool patrol1 = true;
     private bool patrol2 = false;
 
@@ -24,26 +29,53 @@ public class RangedHunterMovement : MonoBehaviour
     {
         rgbd = GetComponentInParent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
-        patrolPoint1 = transform.position.x + 10;
-        patrolPoint2 = transform.position.x - 10;
+        patrolPoint = transform.position.x;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        Patrol();
-        RotateWeapon();
+        direction =  transform.position - player.transform.position;
+        if(PlayerInAttackRange())
+        {
+            RotateWeapon();
+            Attack();
+        }
+        else
+        {
+            Patrol();
+        }
     }
 
     private void RotateWeapon()
     {
-        direction =  player.transform.position - hunterGun.transform.position;
+            
+            hunterGun.transform.right = direction;   
+    }
 
-        if(Vector2.Distance(hunterGun.transform.position, player.transform.position) < 10)
+    private bool PlayerInAttackRange() 
+    {
+        return (Vector2.Distance(transform.position, player.transform.position) > 10 && Vector2.Distance(transform.position, player.transform.position) < 20);
+    }
+
+    private void Attack()
+    {
+        if (!canShoot)
         {
-            hunterGun.transform.right = direction;
+            attackTime += Time.deltaTime;
+            if(attackTime >= 10)
+            {
+                attackTime = 0;
+                canShoot = true;
+            }
         }
+        else
+        {
+            Instantiate(bullet, bulletSpawn.position, bulletSpawn.rotation);
+            canShoot = false;
+        }
+        //Instantiate(bullet, bulletSpawn.position, bulletSpawn.rotation);
     }
 
     private void Patrol()
@@ -53,7 +85,7 @@ public class RangedHunterMovement : MonoBehaviour
         {
             rgbd.velocity = new Vector2(moveSpeed, rgbd.velocity.y);
 
-            if(transform.position.x >= patrolPoint1)
+            if(transform.position.x >= patrolPoint + 10)
             {
                 Vector3 localScale = transform.localScale;
                 localScale.x *= -1;
@@ -68,7 +100,7 @@ public class RangedHunterMovement : MonoBehaviour
         {
             rgbd.velocity = new Vector2(-moveSpeed, rgbd.velocity.y);
 
-            if (transform.position.x <= patrolPoint2)
+            if (transform.position.x <= patrolPoint - 10)
             {
                 Vector3 localScale = transform.localScale;
                 localScale.x *= -1;
