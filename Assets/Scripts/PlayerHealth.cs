@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerHealth : MonoBehaviour
@@ -15,6 +16,11 @@ public class PlayerHealth : MonoBehaviour
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
+
+    private void Start()
+    {
+        health = numOfHearts;
+    }
 
     private void Update()
     {
@@ -55,7 +61,8 @@ public class PlayerHealth : MonoBehaviour
         health -= 1;
         if(health <= 0)
         {
-            Destroy(gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Time.timeScale = 1.0f;
         }
     }
 }
