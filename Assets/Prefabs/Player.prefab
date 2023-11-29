@@ -171,8 +171,8 @@ MonoBehaviour:
   - {fileID: 1433011709153228620}
   - {fileID: 8428199677519042219}
   m_Bounds:
-    m_Center: {x: -0.045212507, y: -0.07155442, z: 0}
-    m_Extent: {x: 2.8157938, y: 3.9319937, z: 0}
+    m_Center: {x: -0.045228004, y: -0.07155442, z: 0}
+    m_Extent: {x: 2.8157945, y: 3.9319937, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -678,7 +678,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  inventory: []
+  inventory:
+  - {fileID: 21300000, guid: 1ae77cb0266184245827e84e3670da2c, type: 3}
+  - {fileID: 21300000, guid: 960ea6ea49b291544bfe39d881c6a70f, type: 3}
+  - {fileID: 21300000, guid: c4b766b605bd8af499ad3e018405a49e, type: 3}
   PISTOLCOOLDOWN: 1
   LMGCOOLDOWN: 0.25
   SHOTGUNCOOLDOWN: 2
@@ -946,8 +949,8 @@ MonoBehaviour:
   - {fileID: 1433011709153228620}
   - {fileID: 8721770618986058282}
   m_Bounds:
-    m_Center: {x: 0.22911215, y: -0.73866034, z: 0}
-    m_Extent: {x: 7.9827857, y: 3.374763, z: 0}
+    m_Center: {x: 0.22909737, y: -0.73866034, z: 0}
+    m_Extent: {x: 7.982788, y: 3.374763, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -1472,8 +1475,8 @@ MonoBehaviour:
   - {fileID: 1433011709153228620}
   - {fileID: 7415459030484465955}
   m_Bounds:
-    m_Center: {x: 0.09405947, y: -0.47027755, z: 0}
-    m_Extent: {x: 2.9144368, y: 3.9648511, z: 0}
+    m_Center: {x: 0.09404397, y: -0.47027755, z: 0}
+    m_Extent: {x: 2.9144373, y: 3.9648511, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -1768,8 +1771,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 2635192039464844096}
   m_Bounds:
-    m_Center: {x: -0.10069895, y: -0.2981553, z: 0}
-    m_Extent: {x: 5.41825, y: 5.530801, z: 0}
+    m_Center: {x: -0.10071373, y: -0.2981553, z: 0}
+    m_Extent: {x: 5.418252, y: 5.530801, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -1979,8 +1982,8 @@ MonoBehaviour:
   - {fileID: 8721770618986058282}
   - {fileID: 6383400010085930930}
   m_Bounds:
-    m_Center: {x: -0.08358717, y: -0.49935102, z: 0}
-    m_Extent: {x: 4.0015545, y: 6.8294296, z: 0}
+    m_Center: {x: -0.083602905, y: -0.49935102, z: 0}
+    m_Extent: {x: 4.0015554, y: 6.8294296, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -2117,8 +2120,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 7189432172777542242}
   m_Bounds:
-    m_Center: {x: -0.08474398, y: -0.26007128, z: 0}
-    m_Extent: {x: 1.6351407, y: 2.5537243, z: 0}
+    m_Center: {x: -0.08474386, y: -0.26007128, z: 0}
+    m_Extent: {x: 1.6351411, y: 2.5537243, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -2224,8 +2227,8 @@ MonoBehaviour:
   - {fileID: 1652353355471882297}
   - {fileID: 1803760682861752208}
   m_Bounds:
-    m_Center: {x: 0.20865607, y: -0.31743658, z: 0}
-    m_Extent: {x: 2.110525, y: 0.6927303, z: 0}
+    m_Center: {x: 0.20864844, y: -0.31743658, z: 0}
+    m_Extent: {x: 2.1105177, y: 0.6927303, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -2491,8 +2494,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 6303747764692611221}
   m_Bounds:
-    m_Center: {x: -4.470173, y: -0.2715839, z: 0}
-    m_Extent: {x: 1.4114101, y: 1.2269111, z: 0}
+    m_Center: {x: -4.470188, y: -0.2715839, z: 0}
+    m_Extent: {x: 1.4114105, y: 1.2269111, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -2601,7 +2604,7 @@ MonoBehaviour:
   - {fileID: 7189432172777542242}
   m_Bounds:
     m_Center: {x: -0.048470497, y: -0.20128584, z: 0}
-    m_Extent: {x: 4.121999, y: 3.4340906, z: 0}
+    m_Extent: {x: 4.1219997, y: 3.4340906, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -2705,7 +2708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7730603302283847043, guid: 746e971c3634b3c4ba97a809690c88db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.00000086442697
+      value: -0.000000864427
       objectReference: {fileID: 0}
     - target: {fileID: 7730603302283847043, guid: 746e971c3634b3c4ba97a809690c88db, type: 3}
       propertyPath: m_LocalPosition.y
