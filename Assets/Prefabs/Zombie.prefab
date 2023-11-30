@@ -300,8 +300,8 @@ MonoBehaviour:
   - {fileID: 2072756349461169734}
   - {fileID: 850499016697938128}
   m_Bounds:
-    m_Center: {x: 0.0029177666, y: 0.00064849854, z: 0}
-    m_Extent: {x: 6.5370903, y: 8.710913, z: 0}
+    m_Center: {x: 0.0029182434, y: 0.00064468384, z: 0}
+    m_Extent: {x: 6.5370893, y: 8.710909, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -442,8 +442,8 @@ MonoBehaviour:
   - {fileID: 7354587916822062163}
   - {fileID: 6907639770373150673}
   m_Bounds:
-    m_Center: {x: -0.0017204285, y: -0.0022478104, z: 0}
-    m_Extent: {x: 10.918282, y: 10.417749, z: 0}
+    m_Center: {x: -0.0017223358, y: -0.0022506714, z: 0}
+    m_Extent: {x: 10.91828, y: 10.41775, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -612,8 +612,8 @@ MonoBehaviour:
   - {fileID: 6907639770373150673}
   - {fileID: 8252112361755502758}
   m_Bounds:
-    m_Center: {x: 0.004504204, y: -0.0000076293945, z: 0}
-    m_Extent: {x: 6.6054916, y: 6.3200016, z: 0}
+    m_Center: {x: 0.004506111, y: -0.000005722046, z: 0}
+    m_Extent: {x: 6.605491, y: 6.320001, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -753,8 +753,8 @@ MonoBehaviour:
   - {fileID: 6907639770373150673}
   - {fileID: 8252112361755502758}
   m_Bounds:
-    m_Center: {x: 0.004303694, y: -0.0000076293945, z: 0}
-    m_Extent: {x: 2.835699, y: 4.6799994, z: 0}
+    m_Center: {x: 0.004302025, y: -0.0000047683716, z: 0}
+    m_Extent: {x: 2.835699, y: 4.6799984, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -833,6 +833,7 @@ GameObject:
   - component: {fileID: 2513726085344850327}
   - component: {fileID: 8887846244333158514}
   - component: {fileID: 8842674838701275574}
+  - component: {fileID: 7836941709309420090}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Enemy
@@ -849,7 +850,7 @@ Transform:
   m_GameObject: {fileID: 6702560725904881506}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.4005928, y: 3.027736, z: -8.349607}
-  m_LocalScale: {x: 0.06973826, y: 0.074375, z: 1}
+  m_LocalScale: {x: 0.13, y: 0.13, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 768527712}
@@ -898,6 +899,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   currentHealth: 0
+--- !u!95 &7836941709309420090
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6702560725904881506}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aabd0ce52ebf1254aae9045b2810f8c4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7037216839873240512
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,8 +1055,8 @@ MonoBehaviour:
   - {fileID: 8252112361755502758}
   - {fileID: 4715370120347701876}
   m_Bounds:
-    m_Center: {x: -0.0047602654, y: 0.00206995, z: 0}
-    m_Extent: {x: 4.155241, y: 6.4942546, z: 0}
+    m_Center: {x: -0.0047597885, y: 0.0020632744, z: 0}
+    m_Extent: {x: 4.155241, y: 6.494253, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -1139,8 +1161,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 6600186441659234540}
   m_Bounds:
-    m_Center: {x: -0.0000019073486, y: 0.0041594505, z: 0}
-    m_Extent: {x: 7.670002, y: 6.0958414, z: 0}
+    m_Center: {x: -0.0000014305115, y: 0.004151821, z: 0}
+    m_Extent: {x: 7.67, y: 6.0958405, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
