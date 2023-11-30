@@ -116,6 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 0}
+  playerController: {fileID: 0}
 --- !u!114 &6046659946089169890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,6 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7a90ff5b48b0d4a921080d3c4ecd03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  patrolRange: 10
   patrolPoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -143,6 +145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2513726085344850327}
   - component: {fileID: 8887846244333158514}
+  - component: {fileID: 8842674838701275574}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Enemy
@@ -187,3 +190,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &8842674838701275574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6702560725904881506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8cecdfa82b44744e98befb6c7628c72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  currentHealth: 0

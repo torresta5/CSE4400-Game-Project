@@ -8,7 +8,6 @@ public class ZombieMovement : MonoBehaviour
     public Transform[] patrolPoints;
     public float moveSpeed;
     public int patrolDestination;
-    public int zombieHealth = 3;
 
     private bool patrol1 = true;
     private bool patrol2 = false;
