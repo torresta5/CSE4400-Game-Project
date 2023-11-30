@@ -976,6 +976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie
       objectReference: {fileID: 0}
+    - target: {fileID: 8842674838701275574, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
+      propertyPath: maxHealth
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8887846244333158514, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: m_Mass
       value: 1
@@ -1092,6 +1096,10 @@ PrefabInstance:
     - target: {fileID: 3028221526021860637, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -121.902
+      objectReference: {fileID: 0}
+    - target: {fileID: 5129393861765934001, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6027854100897693784, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
       propertyPath: m_LocalPosition.x
