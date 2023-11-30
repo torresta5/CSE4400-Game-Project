@@ -15,7 +15,7 @@ public class RangedHunterMovement : MonoBehaviour
 
     private Vector2 direction;
 
-
+    [SerializeField] float patrolRange = 10;
     private float attackTime;
     private float moveSpeed = 5;
     private float patrolPoint;
@@ -50,8 +50,7 @@ public class RangedHunterMovement : MonoBehaviour
 
     private void RotateWeapon()
     {
-            
-            hunterGun.transform.right = direction;   
+            hunterGun.transform.right = direction;
     }
 
     private bool PlayerInAttackRange() 
@@ -75,17 +74,15 @@ public class RangedHunterMovement : MonoBehaviour
             Instantiate(bullet, bulletSpawn.position, bulletSpawn.rotation);
             canShoot = false;
         }
-        //Instantiate(bullet, bulletSpawn.position, bulletSpawn.rotation);
     }
 
     private void Patrol()
     {
-        
         if(patrol1)
         {
             rgbd.velocity = new Vector2(moveSpeed, rgbd.velocity.y);
 
-            if(transform.position.x >= patrolPoint + 10)
+            if(transform.position.x >= patrolPoint + patrolRange)
             {
                 Vector3 localScale = transform.localScale;
                 localScale.x *= -1;
@@ -100,12 +97,13 @@ public class RangedHunterMovement : MonoBehaviour
         {
             rgbd.velocity = new Vector2(-moveSpeed, rgbd.velocity.y);
 
-            if (transform.position.x <= patrolPoint - 10)
+            if (transform.position.x <= patrolPoint - patrolRange)
             {
                 Vector3 localScale = transform.localScale;
                 localScale.x *= -1;
                 transform.localScale = localScale;
 
+                rgbd.velocity = Vector2.zero;
                 patrol1 = !patrol1;
                 patrol2 = !patrol2;
             }
