@@ -21,8 +21,8 @@ public class AimAndShoot : MonoBehaviour
 
     [SerializeField] private Transform[] bulletSpawn;
 
-    private Vector3 mousePosition;
-    private Vector3 direction;
+    private Vector2 mousePosition;
+    private Vector2 direction;
 
     private bool canShoot = true;
 
@@ -53,11 +53,12 @@ public class AimAndShoot : MonoBehaviour
     {
 
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        direction = mousePosition - gun.transform.position;
+        direction = mousePosition - (Vector2)gun.transform.position;
         gun.transform.right = direction;
 
         for (int i = 0; i < bulletSpawn.Length; i++) 
         {
+            
             bulletSpawn[i].right = direction;
         }
 
@@ -134,7 +135,6 @@ public class AimAndShoot : MonoBehaviour
             currentWeapon = 0;
             
         }
-
         else if (Input.GetKeyDown(KeyCode.Alpha2) && currentWeapon != 1)
         {
             weapons[1].SetActive(true);
