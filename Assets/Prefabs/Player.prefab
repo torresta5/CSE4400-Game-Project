@@ -431,7 +431,6 @@ GameObject:
   - component: {fileID: 1941260391}
   - component: {fileID: 6333876914014541454}
   - component: {fileID: 611306923}
-  - component: {fileID: 1980433803561538938}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -716,32 +715,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1980433803561538938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 998639917758250005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 378c6d657730ef14c81b4146540c695a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 4
-  numOfHearts: 4
-  hearts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  fullHeart: {fileID: 21300000, guid: de3c43bedf6eae0409706518abbd0a53, type: 3}
-  emptyHeart: {fileID: 21300000, guid: 634fe7b44834ed341a2a55e8f8a1cb16, type: 3}
 --- !u!1 &1200274156207949683
 GameObject:
   m_ObjectHideFlags: 0
