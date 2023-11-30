@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 447837192}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.4, y: 3.08, z: 0}
+  m_LocalPosition: {x: 19.9, y: 3.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55,7 +55,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543943027}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.8, y: 0.8, z: 0}
+  m_LocalPosition: {x: 9.3, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -171,8 +171,8 @@ MonoBehaviour:
   - {fileID: 1433011709153228620}
   - {fileID: 8428199677519042219}
   m_Bounds:
-    m_Center: {x: -0.045212507, y: -0.07155442, z: 0}
-    m_Extent: {x: 2.8157938, y: 3.9319937, z: 0}
+    m_Center: {x: -0.045251846, y: -0.07155514, z: 0}
+    m_Extent: {x: 2.8158026, y: 3.931995, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -946,8 +946,8 @@ MonoBehaviour:
   - {fileID: 1433011709153228620}
   - {fileID: 8721770618986058282}
   m_Bounds:
-    m_Center: {x: 0.22911215, y: -0.73866034, z: 0}
-    m_Extent: {x: 7.9827857, y: 3.374763, z: 0}
+    m_Center: {x: 0.22910452, y: -0.73866034, z: 0}
+    m_Extent: {x: 7.982778, y: 3.374763, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -1472,8 +1472,8 @@ MonoBehaviour:
   - {fileID: 1433011709153228620}
   - {fileID: 7415459030484465955}
   m_Bounds:
-    m_Center: {x: 0.09405947, y: -0.47027755, z: 0}
-    m_Extent: {x: 2.9144368, y: 3.9648511, z: 0}
+    m_Center: {x: 0.09402132, y: -0.47027755, z: 0}
+    m_Extent: {x: 2.9144292, y: 3.9648492, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -1768,7 +1768,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 2635192039464844096}
   m_Bounds:
-    m_Center: {x: -0.10069895, y: -0.2981553, z: 0}
+    m_Center: {x: -0.100744724, y: -0.29815912, z: 0}
     m_Extent: {x: 5.41825, y: 5.530801, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -2117,7 +2117,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 7189432172777542242}
   m_Bounds:
-    m_Center: {x: -0.08474398, y: -0.26007128, z: 0}
+    m_Center: {x: -0.08474398, y: -0.2600751, z: 0}
     m_Extent: {x: 1.6351407, y: 2.5537243, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -2224,8 +2224,8 @@ MonoBehaviour:
   - {fileID: 1652353355471882297}
   - {fileID: 1803760682861752208}
   m_Bounds:
-    m_Center: {x: 0.20865607, y: -0.31743658, z: 0}
-    m_Extent: {x: 2.110525, y: 0.6927303, z: 0}
+    m_Center: {x: 0.20862556, y: -0.3174404, z: 0}
+    m_Extent: {x: 2.110525, y: 0.6927265, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -2491,7 +2491,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 6303747764692611221}
   m_Bounds:
-    m_Center: {x: -4.470173, y: -0.2715839, z: 0}
+    m_Center: {x: -4.470173, y: -0.27158773, z: 0}
     m_Extent: {x: 1.4114101, y: 1.2269111, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -2600,8 +2600,8 @@ MonoBehaviour:
   - {fileID: 8721770618986058282}
   - {fileID: 7189432172777542242}
   m_Bounds:
-    m_Center: {x: -0.048470497, y: -0.20128584, z: 0}
-    m_Extent: {x: 4.121999, y: 3.4340906, z: 0}
+    m_Center: {x: -0.048523903, y: -0.2012887, z: 0}
+    m_Extent: {x: 4.1220217, y: 3.4340916, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -2705,11 +2705,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7730603302283847043, guid: 746e971c3634b3c4ba97a809690c88db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.00000086442697
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7730603302283847043, guid: 746e971c3634b3c4ba97a809690c88db, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.889206
+      value: 2.8892052
       objectReference: {fileID: 0}
     - target: {fileID: 7730603302283847043, guid: 746e971c3634b3c4ba97a809690c88db, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2766,6 +2766,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: afabf2c02e00ed740b4fa1c5367c453c, type: 3}
+    - target: {fileID: 1281490218634484444, guid: 142676f10e352db4d9919e2a3f3a4ecd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281490218634484444, guid: 142676f10e352db4d9919e2a3f3a4ecd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2578294327693972335, guid: 142676f10e352db4d9919e2a3f3a4ecd, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2813,6 +2821,10 @@ PrefabInstance:
     - target: {fileID: 3402078833190679267, guid: 142676f10e352db4d9919e2a3f3a4ecd, type: 3}
       propertyPath: m_LocalPosition.y
       value: 2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462480999369865542, guid: 142676f10e352db4d9919e2a3f3a4ecd, type: 3}
+      propertyPath: m_Name
+      value: Bullet Spawn
       objectReference: {fileID: 0}
     - target: {fileID: 5300484444650155056, guid: 142676f10e352db4d9919e2a3f3a4ecd, type: 3}
       propertyPath: m_RootOrder
