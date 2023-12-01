@@ -525,6 +525,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3896062491793246289, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1132964366}
+    - target: {fileID: 3896062491793246289, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 1132964365}
     - target: {fileID: 6702560725904881506, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: m_Name
       value: Zombie (2)
@@ -1617,6 +1625,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3896062491793246289, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1132964366}
+    - target: {fileID: 3896062491793246289, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 1132964365}
     - target: {fileID: 6702560725904881506, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: m_Name
       value: Zombie (6)
@@ -3314,6 +3330,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3896062491793246289, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1132964366}
+    - target: {fileID: 3896062491793246289, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 1132964365}
     - target: {fileID: 6702560725904881506, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: m_Name
       value: Zombie (9)
@@ -3455,6 +3479,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3896062491793246289, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1132964366}
+    - target: {fileID: 3896062491793246289, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 1132964365}
     - target: {fileID: 6702560725904881506, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: m_Name
       value: Zombie (11)
@@ -4065,6 +4097,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3896062491793246289, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1132964366}
+    - target: {fileID: 3896062491793246289, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 1132964365}
     - target: {fileID: 6702560725904881506, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: m_Name
       value: Zombie (5)
@@ -5625,6 +5665,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3896062491793246289, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1132964366}
+    - target: {fileID: 3896062491793246289, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 1132964365}
     - target: {fileID: 6702560725904881506, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: m_Name
       value: Zombie (4)
@@ -7541,6 +7589,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2326326966225551799, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
   m_PrefabInstance: {fileID: 1941260389}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1132964365 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 138120217629998302, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
+  m_PrefabInstance: {fileID: 1941260389}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15d0327cab680a14e95ab141171cf317, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1132964366 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 611306927, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
+  m_PrefabInstance: {fileID: 1941260389}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 378c6d657730ef14c81b4146540c695a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1156308625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8437,6 +8507,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3896062491793246289, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1132964366}
+    - target: {fileID: 3896062491793246289, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 1132964365}
     - target: {fileID: 6702560725904881506, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: m_Name
       value: Zombie (8)
@@ -8739,6 +8817,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3896062491793246289, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1132964366}
+    - target: {fileID: 3896062491793246289, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 1132964365}
     - target: {fileID: 6702560725904881506, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: m_Name
       value: Zombie (3)
@@ -10182,6 +10268,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3896062491793246289, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1132964366}
+    - target: {fileID: 3896062491793246289, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 1132964365}
     - target: {fileID: 6702560725904881506, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: m_Name
       value: Zombie
@@ -13741,6 +13835,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3896062491793246289, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1132964366}
+    - target: {fileID: 3896062491793246289, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 1132964365}
     - target: {fileID: 6702560725904881506, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: m_Name
       value: Zombie (10)
