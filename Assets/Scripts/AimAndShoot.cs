@@ -75,6 +75,7 @@ public class AimAndShoot : MonoBehaviour
 
     private void Shoot()
     {
+        
         timeSinceShot += Time.deltaTime;
         if (!canShoot)
         {
@@ -108,9 +109,11 @@ public class AimAndShoot : MonoBehaviour
                     break;
             }
         }
-        if (Input.GetButton("Fire1") && canShoot)
+        // This is terrible, I know plz dont judge me
+        if( (Input.GetButtonDown("Fire1") && canShoot && currentWeapon != 1)  || (Input.GetButton("Fire1") && canShoot && currentWeapon == 1))
         {
-            if(currentWeapon == 2)
+            canShoot = false;
+            if (currentWeapon == 2)
             {
                 for(int i = currentWeapon; i < bulletSpawn.Length; i++)
                 {
@@ -121,7 +124,6 @@ public class AimAndShoot : MonoBehaviour
             {
                 Instantiate(bullet, bulletSpawn[currentWeapon].position, bulletSpawn[currentWeapon].rotation);
             }
-            canShoot = false;
         }
     }
 
