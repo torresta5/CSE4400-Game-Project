@@ -8,7 +8,7 @@ public class Nuke : MonoBehaviour
 
     void Start()
     {
-        Destroy(gameObject, 0.5f);
+        Destroy(gameObject, 0.05f);
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
