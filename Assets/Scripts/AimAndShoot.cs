@@ -8,6 +8,7 @@ public class AimAndShoot : MonoBehaviour
 {
     [SerializeField] private GameObject gun;
     [SerializeField] private GameObject bullet;
+    [SerializeField] private GameObject nuke;
 
     [SerializeField] private GameObject[] weapons;
     [SerializeField] private Image[] Loadout;
@@ -133,6 +134,7 @@ public class AimAndShoot : MonoBehaviour
             }
             else if(currentWeapon == 3)
             {
+                Instantiate(nuke, bulletSpawn[currentWeapon].position, bulletSpawn[currentWeapon].rotation);
                 weapons[0].SetActive(true);
                 weapons[currentWeapon].SetActive(false);
                 Loadout[currentWeapon].color = new(1f, 1f, 1f, 0.5f);
