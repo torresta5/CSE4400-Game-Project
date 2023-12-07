@@ -278,6 +278,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3334315716148670342, guid: be422bda44adf4a4198942e5d19d3c12, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3334315716148670342, guid: be422bda44adf4a4198942e5d19d3c12, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6320070454996084315, guid: be422bda44adf4a4198942e5d19d3c12, type: 3}
       propertyPath: m_Name
       value: HUD
