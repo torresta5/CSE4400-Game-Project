@@ -171,8 +171,8 @@ MonoBehaviour:
   - {fileID: 1433011709153228620}
   - {fileID: 8428199677519042219}
   m_Bounds:
-    m_Center: {x: -0.045232534, y: -0.07155752, z: 0}
-    m_Extent: {x: 2.8158023, y: 3.9319944, z: 0}
+    m_Center: {x: -0.045235634, y: -0.07155681, z: 0}
+    m_Extent: {x: 2.815802, y: 3.9319947, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -545,6 +545,9 @@ MonoBehaviour:
   KBCounter: 0
   KBTotalTime: 0.2
   knockFromRight: 0
+  specialMeter: {fileID: 0}
+  currentMeter: 0
+  bullet: {fileID: 2707895245352439253, guid: d0a310e745b3d2f4bac429a96f17a61b, type: 3}
 --- !u!61 &611306924
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -922,8 +925,8 @@ MonoBehaviour:
   - {fileID: 1433011709153228620}
   - {fileID: 8721770618986058282}
   m_Bounds:
-    m_Center: {x: 0.22910452, y: -0.7386601, z: 0}
-    m_Extent: {x: 7.9827857, y: 3.3747623, z: 0}
+    m_Center: {x: 0.22909737, y: -0.7386594, z: 0}
+    m_Extent: {x: 7.982788, y: 3.374762, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -1448,8 +1451,8 @@ MonoBehaviour:
   - {fileID: 1433011709153228620}
   - {fileID: 7415459030484465955}
   m_Bounds:
-    m_Center: {x: 0.09405756, y: -0.47027707, z: 0}
-    m_Extent: {x: 2.9144368, y: 3.9648502, z: 0}
+    m_Center: {x: 0.09404397, y: -0.4702766, z: 0}
+    m_Extent: {x: 2.9144373, y: 3.9648502, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -1744,8 +1747,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 2635192039464844096}
   m_Bounds:
-    m_Center: {x: -0.10071039, y: -0.2981553, z: 0}
-    m_Extent: {x: 5.41825, y: 5.530801, z: 0}
+    m_Center: {x: -0.10071373, y: -0.29815483, z: 0}
+    m_Extent: {x: 5.418252, y: 5.530801, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -1955,8 +1958,8 @@ MonoBehaviour:
   - {fileID: 8721770618986058282}
   - {fileID: 6383400010085930930}
   m_Bounds:
-    m_Center: {x: -0.08357954, y: -0.49935246, z: 0}
-    m_Extent: {x: 4.0015545, y: 6.829429, z: 0}
+    m_Center: {x: -0.083602905, y: -0.49935293, z: 0}
+    m_Extent: {x: 4.0015554, y: 6.829429, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -2093,8 +2096,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 7189432172777542242}
   m_Bounds:
-    m_Center: {x: -0.08474016, y: -0.2600751, z: 0}
-    m_Extent: {x: 1.6351407, y: 2.5537245, z: 0}
+    m_Center: {x: -0.084759116, y: -0.2600751, z: 0}
+    m_Extent: {x: 1.6351411, y: 2.5537243, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -2200,8 +2203,8 @@ MonoBehaviour:
   - {fileID: 1652353355471882297}
   - {fileID: 1803760682861752208}
   m_Bounds:
-    m_Center: {x: 0.20865321, y: -0.3174399, z: 0}
-    m_Extent: {x: 2.110524, y: 0.6927279, z: 0}
+    m_Center: {x: 0.20864081, y: -0.31744182, z: 0}
+    m_Extent: {x: 2.1105254, y: 0.6927279, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -2467,8 +2470,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 6303747764692611221}
   m_Bounds:
-    m_Center: {x: -0.74433124, y: 0.19846809, z: 0}
-    m_Extent: {x: 1.5105144, y: 1.1276896, z: 0}
+    m_Center: {x: -0.7443352, y: 0.1984694, z: 0}
+    m_Extent: {x: 1.5105147, y: 1.1276896, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -2576,8 +2579,8 @@ MonoBehaviour:
   - {fileID: 8721770618986058282}
   - {fileID: 7189432172777542242}
   m_Bounds:
-    m_Center: {x: 6.190316, y: -0.40483403, z: 0}
-    m_Extent: {x: 3.623318, y: 3.1959972, z: 0}
+    m_Center: {x: 6.1903124, y: -0.40483356, z: 0}
+    m_Extent: {x: 3.6233263, y: 3.1959965, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -2685,11 +2688,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7730603302283847043, guid: 746e971c3634b3c4ba97a809690c88db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.684444
+      value: -0.000000864427
       objectReference: {fileID: 0}
     - target: {fileID: 7730603302283847043, guid: 746e971c3634b3c4ba97a809690c88db, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.4108872
+      value: 3.0231302
       objectReference: {fileID: 0}
     - target: {fileID: 7730603302283847043, guid: 746e971c3634b3c4ba97a809690c88db, type: 3}
       propertyPath: m_LocalPosition.z
