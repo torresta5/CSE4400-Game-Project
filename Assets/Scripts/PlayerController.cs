@@ -32,6 +32,8 @@ public class PlayerController : MonoBehaviour
     public float KBCounter;
     public float KBTotalTime;
     public bool knockFromRight;
+    public SpecialMeter specialMeter;
+    public int currentMeter;
 
     // Start is called before the first frame update
     private void Start()
@@ -39,6 +41,9 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
+
+        currentMeter = 0;
+        specialMeter.SetMinMeter();
     }
 
     // Update is called once per frame
@@ -47,6 +52,11 @@ public class PlayerController : MonoBehaviour
         if (isDashing)
         {
             return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            AddMeter();
         }
 
         mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
@@ -211,5 +221,10 @@ public class PlayerController : MonoBehaviour
         //    localScale.x *= -1f;
         //    transform.localScale = localScale;
         //}
+    }
+
+    public void AddMeter()
+    {
+        specialMeter.SetMeter(1);
     }
 }

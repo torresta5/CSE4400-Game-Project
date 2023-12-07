@@ -10,12 +10,12 @@ public class SpecialMeter : MonoBehaviour
 
     public void SetMinMeter()
     {
-        slider.maxValue = 0;
+        slider.maxValue = 35;
         slider.value = 0;
     }
 
     public void SetMeter(int meterValue)
     {
-        slider.value = meterValue;
+        slider.value += meterValue;
     }
 }
