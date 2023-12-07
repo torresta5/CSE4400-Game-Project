@@ -11,7 +11,7 @@ public class Nuke : MonoBehaviour
         Destroy(gameObject, 0.5f);
     }
 
-    public void nCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
         {
