@@ -758,6 +758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gun: {fileID: 8807627138751715196}
   bullet: {fileID: 1758404581807429377, guid: d0a310e745b3d2f4bac429a96f17a61b, type: 3}
+  nuke: {fileID: 9136619072485142062, guid: 48a1350158313d749b31a89118d16063, type: 3}
   weapons:
   - {fileID: 8807627138751715196}
   - {fileID: 8840625582814799092}
@@ -1616,7 +1617,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6380164658502682416}
   m_Layer: 0
-  m_Name: Bullet Spawn
+  m_Name: Nuke Spawn
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0

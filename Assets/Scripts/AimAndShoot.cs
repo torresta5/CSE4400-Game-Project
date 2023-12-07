@@ -134,12 +134,13 @@ public class AimAndShoot : MonoBehaviour
             }
             else if(currentWeapon == 3)
             {
-                Instantiate(nuke, bulletSpawn[currentWeapon].position, bulletSpawn[currentWeapon].rotation);
+                Instantiate(nuke, bulletSpawn[currentWeapon].position, bulletSpawn[currentWeapon].rotation = new Quaternion(0, 0, 0, 0));
                 weapons[0].SetActive(true);
                 weapons[currentWeapon].SetActive(false);
                 Loadout[currentWeapon].color = new(1f, 1f, 1f, 0.5f);
                 currentWeapon = 0;
                 specialMeter.slider.value = 0;
+
             }
             else
             {
