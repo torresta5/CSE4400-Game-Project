@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -136,6 +137,7 @@ public class AimAndShoot : MonoBehaviour
                 weapons[currentWeapon].SetActive(false);
                 Loadout[currentWeapon].color = new(1f, 1f, 1f, 0.5f);
                 currentWeapon = 0;
+                specialMeter.slider.value = 0;
             }
             else
             {
