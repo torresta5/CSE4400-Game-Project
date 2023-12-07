@@ -130,6 +130,13 @@ public class AimAndShoot : MonoBehaviour
                     Instantiate(bullet, bulletSpawn[i].position, bulletSpawn[i].rotation);
                 }
             }
+            else if(currentWeapon == 3)
+            {
+                weapons[0].SetActive(true);
+                weapons[currentWeapon].SetActive(false);
+                Loadout[currentWeapon].color = new(1f, 1f, 1f, 0.5f);
+                currentWeapon = 0;
+            }
             else
             {
                 Instantiate(bullet, bulletSpawn[currentWeapon].position, bulletSpawn[currentWeapon].rotation);
