@@ -28,6 +28,8 @@ public class AimAndShoot : MonoBehaviour
 
     private float timeSinceShot = 0;
 
+    public SpecialMeter specialMeter;
+
     private void Start()
     {
         numWeapons = weapons.Length;
@@ -105,6 +107,14 @@ public class AimAndShoot : MonoBehaviour
                     }
                     break;
 
+                case 3:
+                    if(specialMeter.slider.value == 35)
+                    {
+                        canShoot = true;
+                    }
+                    break;
+
+
                 default:
                     break;
             }
@@ -150,6 +160,13 @@ public class AimAndShoot : MonoBehaviour
             weapons[currentWeapon].SetActive(false);
             Loadout[currentWeapon].color = new(1f, 1f, 1f, 0.5f);
             currentWeapon = 2;
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha4) && currentWeapon != 3 && specialMeter.slider.value == 35)
+        {
+            weapons[3].SetActive(true);
+            weapons[currentWeapon].SetActive(false);
+            Loadout[currentWeapon].color = new(1f, 1f, 1f, 0.5f);
+            currentWeapon = 3;
         }
         gun = weapons[currentWeapon];
         Loadout[currentWeapon].color = new (1f, 1f, 1f, 1f);
