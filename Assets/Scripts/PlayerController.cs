@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
     public bool knockFromRight;
     public SpecialMeter specialMeter;
     public int currentMeter;
+    public Bullet bullet;
 
     // Start is called before the first frame update
     private void Start()
@@ -58,6 +59,7 @@ public class PlayerController : MonoBehaviour
         {
             AddMeter();
         }
+
 
         mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPosition.z = 0;
