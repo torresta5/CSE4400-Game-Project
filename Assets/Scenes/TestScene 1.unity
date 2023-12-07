@@ -1023,6 +1023,10 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 8842674838701275574, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 1888069847}
     - target: {fileID: 8887846244333158514, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: m_Mass
       value: 1
