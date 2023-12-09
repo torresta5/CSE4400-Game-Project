@@ -14,7 +14,7 @@ public class ZombieMovement : MonoBehaviour
     private float patrolPoint;
     private Rigidbody2D rb;
 
-    private void Start()
+    public void Start()
     {
         rb = GetComponentInParent<Rigidbody2D>();
         patrolPoint = transform.position.x;
@@ -76,5 +76,10 @@ public class ZombieMovement : MonoBehaviour
                 patrol2 = !patrol2;
             }
         }
+    }
+
+    public void NoMovement()
+    {
+        rb.velocity = Vector3.zero;
     }
 }
