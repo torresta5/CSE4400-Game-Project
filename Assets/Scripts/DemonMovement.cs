@@ -13,6 +13,7 @@ public class DemonMovement : MonoBehaviour
     public float playerRange;
     public LayerMask playerLayer;
     public bool playerInRange;
+    public Transform startingPoint;
 
     public void Start()
     {
@@ -26,6 +27,10 @@ public class DemonMovement : MonoBehaviour
         if (playerInRange)
         {
             transform.position = Vector3.MoveTowards(transform.position, playerController.transform.position, moveSpeed * Time.deltaTime);
+        }
+        else if(!playerInRange)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, startingPoint.position, moveSpeed * Time.deltaTime);
         }
     }
 
