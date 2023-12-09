@@ -333,8 +333,8 @@ MonoBehaviour:
   - {fileID: 8447098190646022253}
   - {fileID: 8447098190572851744}
   m_Bounds:
-    m_Center: {x: 0.00966835, y: -0.013081551, z: 0}
-    m_Extent: {x: 8.909658, y: 9.693081, z: 0}
+    m_Center: {x: 0.0096645355, y: -0.013073921, z: 0}
+    m_Extent: {x: 8.909655, y: 9.693089, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -571,6 +571,7 @@ GameObject:
   - component: {fileID: 8447098190997613691}
   - component: {fileID: 8447098190997613688}
   - component: {fileID: 8447098190997613689}
+  - component: {fileID: 4871070207842960923}
   m_Layer: 0
   m_Name: Demon
   m_TagString: Enemy
@@ -654,6 +655,27 @@ MonoBehaviour:
     m_Bits: 128
   playerInRange: 0
   startingPoint: {fileID: 0}
+--- !u!95 &4871070207842960923
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8447098190997613685}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 749fc63793fd55e4a91b99e1e5ab2121, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8447098191028799917
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,8 +1144,8 @@ MonoBehaviour:
   - {fileID: 8447098190572851744}
   - {fileID: 8447098191741297448}
   m_Bounds:
-    m_Center: {x: -0.010044098, y: 0.10041809, z: 0}
-    m_Extent: {x: 28.170046, y: 16.545658, z: 0}
+    m_Center: {x: -0.010040283, y: 0.10041809, z: 0}
+    m_Extent: {x: 28.170042, y: 16.545658, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
