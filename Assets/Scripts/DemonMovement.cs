@@ -1,31 +1,36 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.EventSystems;
 using UnityEngine;
 
 public class DemonMovement : MonoBehaviour
 {
+    private PlayerController playerController;
+    private Rigidbody2D rb;
 
-    public float speed;
-    private GameObject player;
+    public float moveSpeed;
+    public float playerRange;
+    public LayerMask playerLayer;
+    public bool playerInRange;
 
-    // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        playerController = FindObjectOfType<PlayerController>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (player == null)
+        playerInRange = Physics2D.OverlapCircle(transform.position, playerRange, playerLayer);
+        if (playerInRange)
         {
-            return;
+            transform.position = Vector3.MoveTowards(transform.position, playerController.transform.position, moveSpeed * Time.deltaTime);
         }
-        Chase();
     }
 
-    private void Chase()
+    private void OnDrawGizmosSelected()
     {
-        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        Gizmos.DrawSphere(transform.position, playerRange);
     }
 }
