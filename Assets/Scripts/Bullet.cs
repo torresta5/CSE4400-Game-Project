@@ -8,6 +8,7 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = transform.right * 100;
         Destroy(gameObject, 2f);
@@ -17,6 +18,11 @@ public class Bullet : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
+            Destroy(gameObject);
+        }
+        else if (collision.gameObject.tag == "Player") 
+        {
+            collision.gameObject.GetComponent<PlayerHealth>().takeDamage();
             Destroy(gameObject);
         }
     }

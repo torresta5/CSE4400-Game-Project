@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class RangedHunterMovement : MonoBehaviour
 {
-    [SerializeField] PlayerHealth playerHealth;
     [SerializeField] GameObject player;
     [SerializeField] GameObject hunterGun;
     [SerializeField] GameObject bullet;
@@ -40,7 +39,7 @@ public class RangedHunterMovement : MonoBehaviour
         
         if(PlayerInAttackRange())
         {
-            rgbd.velocity = Vector2.zero;
+            rgbd.velocity = new Vector2(0, rgbd.velocity.y);
             FaceThePlayer();
             RotateWeapon();
             Attack();
@@ -72,7 +71,7 @@ public class RangedHunterMovement : MonoBehaviour
         if (!canShoot)
         {
             attackTime += Time.deltaTime;
-            if(attackTime >= 3f)
+            if (attackTime >= 3f)
             {
                 attackTime = 0;
                 canShoot = true;
