@@ -9,9 +9,11 @@ public class RangedHunterMovement : MonoBehaviour
     [SerializeField] GameObject bullet;
 
     [SerializeField] Transform bulletSpawn;
-    [SerializeField] float patrolRange = 10;
-    
+    [SerializeField] float patrolRange = 10f;
+    [SerializeField] float attackRange = 20f;
+
     [SerializeField] private bool flip;
+    
     private Rigidbody2D rgbd;
 
     private Vector2 direction;
@@ -52,18 +54,20 @@ public class RangedHunterMovement : MonoBehaviour
 
     private void RotateWeapon()
     {
-        direction = transform.position - player.transform.position ;
+        //direction = transform.position - player.transform.position;
+        direction = player.transform.position - transform.position;
         hunterGun.transform.right = direction;
         bulletSpawn.transform.right = direction;
         if(transform.localScale.x < 0)
         {
+            hunterGun.transform.right *= -1;
             bulletSpawn.right *= -1;
         }
     }
 
     private bool PlayerInAttackRange() 
     {
-        return ( Vector2.Distance(transform.position, player.transform.position) < 20 ) ;
+        return (Vector2.Distance(transform.position, player.transform.position) < attackRange) ;
     }
 
     private void Attack()
@@ -79,6 +83,7 @@ public class RangedHunterMovement : MonoBehaviour
         }
         else
         {
+            
             Instantiate(bullet, bulletSpawn.position, bulletSpawn.rotation);
             canShoot = false;
         }
@@ -86,6 +91,13 @@ public class RangedHunterMovement : MonoBehaviour
 
     private void Patrol()
     {
+        if ((transform.localScale.x < 0 && patrol1) || (patrol2 && transform.localScale.x > 0))
+        {
+            Vector3 localScale = transform.localScale;
+            localScale.x *= -1;
+            transform.localScale = localScale;
+        }
+
         if(patrol1)
         {
             rgbd.velocity = new Vector2(moveSpeed, rgbd.velocity.y);
