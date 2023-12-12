@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class RangedHunterMovement : MonoBehaviour
 {
-    private GameObject player;
-
+    [SerializeField] GameObject player;
     [SerializeField] GameObject hunterGun;
     [SerializeField] GameObject bullet;
 
     [SerializeField] Transform bulletSpawn;
+    [SerializeField] float patrolRange = 10f;
+    [SerializeField] float attackRange = 20f;
 
+    [SerializeField] private bool flip;
+    
     private Rigidbody2D rgbd;
 
     private Vector2 direction;
 
-    [SerializeField] float patrolRange = 10;
     private float attackTime;
     private float moveSpeed = 5;
     private float patrolPoint;
@@ -28,7 +30,7 @@ public class RangedHunterMovement : MonoBehaviour
     void Start()
     {
         rgbd = GetComponentInParent<Rigidbody2D>();
-        player = GameObject.FindGameObjectWithTag("Player");
+        
         patrolPoint = transform.position.x;
         
     }
@@ -36,9 +38,11 @@ public class RangedHunterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        direction =  transform.position - player.transform.position;
+        
         if(PlayerInAttackRange())
         {
+            rgbd.velocity = new Vector2(0, rgbd.velocity.y);
+            FaceThePlayer();
             RotateWeapon();
             Attack();
         }
@@ -50,12 +54,20 @@ public class RangedHunterMovement : MonoBehaviour
 
     private void RotateWeapon()
     {
-            hunterGun.transform.right = direction;
+        //direction = transform.position - player.transform.position;
+        direction = player.transform.position - transform.position;
+        hunterGun.transform.right = direction;
+        bulletSpawn.transform.right = direction;
+        if(transform.localScale.x < 0)
+        {
+            hunterGun.transform.right *= -1;
+            bulletSpawn.right *= -1;
+        }
     }
 
     private bool PlayerInAttackRange() 
     {
-        return (Vector2.Distance(transform.position, player.transform.position) > 10 && Vector2.Distance(transform.position, player.transform.position) < 20);
+        return (Vector2.Distance(transform.position, player.transform.position) < attackRange) ;
     }
 
     private void Attack()
@@ -63,7 +75,7 @@ public class RangedHunterMovement : MonoBehaviour
         if (!canShoot)
         {
             attackTime += Time.deltaTime;
-            if(attackTime >= 10)
+            if (attackTime >= 3f)
             {
                 attackTime = 0;
                 canShoot = true;
@@ -71,6 +83,7 @@ public class RangedHunterMovement : MonoBehaviour
         }
         else
         {
+            
             Instantiate(bullet, bulletSpawn.position, bulletSpawn.rotation);
             canShoot = false;
         }
@@ -78,6 +91,13 @@ public class RangedHunterMovement : MonoBehaviour
 
     private void Patrol()
     {
+        if ((transform.localScale.x < 0 && patrol1) || (patrol2 && transform.localScale.x > 0))
+        {
+            Vector3 localScale = transform.localScale;
+            localScale.x *= -1;
+            transform.localScale = localScale;
+        }
+
         if(patrol1)
         {
             rgbd.velocity = new Vector2(moveSpeed, rgbd.velocity.y);
@@ -87,7 +107,6 @@ public class RangedHunterMovement : MonoBehaviour
                 Vector3 localScale = transform.localScale;
                 localScale.x *= -1;
                 transform.localScale = localScale;
-
                 rgbd.velocity = Vector2.zero;
                 patrol1 = !patrol1;
                 patrol2 = !patrol2;
@@ -108,5 +127,21 @@ public class RangedHunterMovement : MonoBehaviour
                 patrol2 = !patrol2;
             }
         }
+    }
+
+    private void FaceThePlayer() 
+    {     
+        Vector3 scale = transform.localScale;
+
+        if (player.transform.position.x > transform.position.x)
+        {
+            scale.x = Mathf.Abs(scale.x) * -1 * (flip ? -1 : 0);
+        } 
+        else 
+        {
+            scale.x = Mathf.Abs(scale.x) * (flip ? -1 : 1);
+        }
+
+        transform.localScale = scale;  
     }
 }
