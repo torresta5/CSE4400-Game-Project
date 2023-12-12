@@ -17018,6 +17018,10 @@ PrefabInstance:
       propertyPath: inventory.Array.data[3]
       value: 
       objectReference: {fileID: 21300000, guid: bf31fc1e4e593a54f87f92c7591704ac, type: 3}
+    - target: {fileID: 6745148932656064209, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7730603303017544723, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
       propertyPath: orthographic size
       value: 20
