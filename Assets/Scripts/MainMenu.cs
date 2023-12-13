@@ -32,7 +32,7 @@ public class MainMenu : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.V))
         {
             StateNameController.isComplete = !StateNameController.isComplete;
         }
@@ -50,7 +50,7 @@ public class MainMenu : MonoBehaviour
 
     public void JesusOnButton()
     {
-        isJesus = true;
+        //isJesus = true;
         //Debug.Log("Jesus is here!");
         StateNameController.isJesus = true;
         //Debug.Log(StateNameController.isJesus);
@@ -58,7 +58,7 @@ public class MainMenu : MonoBehaviour
 
     public void JesusOffButton()
     {
-        isJesus = false;
+        //isJesus = false;
         //Debug.Log("Farewell Jesus");
         StateNameController.isJesus = false;
         //Debug.Log(StateNameController.isJesus);
