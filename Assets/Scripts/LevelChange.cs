@@ -12,7 +12,10 @@ public class LevelChange : MonoBehaviour
         if(other.tag == "Player")
         {
             SceneManager.LoadSceneAsync(sceneBuildIndex, LoadSceneMode.Single);
+            StateNameController.storyIndex += 1;
         }
+
+
     }
 
 }
