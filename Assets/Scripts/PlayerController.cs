@@ -46,8 +46,11 @@ public class PlayerController : MonoBehaviour
         coll = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
 
+        Debug.Log(StateNameController.isJesus);
+
         if(StateNameController.isJesus == false)
         {
+            //head.SetActive(false);
             Debug.Log(StateNameController.isJesus);
         }
 
