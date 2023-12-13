@@ -35,6 +35,9 @@ public class PlayerController : MonoBehaviour
     public SpecialMeter specialMeter;
     public int currentMeter;
     public Bullet bullet;
+    public MainMenu mainMenu;
+
+    public GameObject head;
 
     // Start is called before the first frame update
     private void Start()
@@ -42,6 +45,11 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
+
+        if(mainMenu.isJesus == false)
+        {
+            head.SetActive(false);
+        }
 
         currentMeter = 0;
         specialMeter.SetMinMeter();
