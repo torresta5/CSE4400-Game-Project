@@ -68,7 +68,6 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-
         mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPosition.z = 0;
 
