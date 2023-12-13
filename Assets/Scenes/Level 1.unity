@@ -10788,6 +10788,10 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1132964364}
+    - target: {fileID: 7500885120466200088, guid: 6ee60b61d7013044e9b9a89f3670e047, type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 7500885120466200089, guid: 6ee60b61d7013044e9b9a89f3670e047, type: 3}
       propertyPath: m_Name
       value: CM vcam
