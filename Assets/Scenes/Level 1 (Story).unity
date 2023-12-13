@@ -1406,6 +1406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneBuildIndex: 2
+  level: 1
 --- !u!1 &145679116
 GameObject:
   m_ObjectHideFlags: 0
