@@ -13,10 +13,8 @@ public class MainMenu : MonoBehaviour
     public string difficulty = "Normal";
 
     public GameObject extrasMenu;
+    public GameObject levelSelectMenu;
 
-    public void Start()
-    {
-    }
 
     private void Update()
     {
@@ -32,9 +30,40 @@ public class MainMenu : MonoBehaviour
             }
         }
 
+        if (levelSelectMenu.activeInHierarchy)
+        {
+            if (StateNameController.level1Complete == false)
+            {
+                GameObject.Find("Level 1").GetComponent<Button>().enabled = false;
+            }
+            else if (StateNameController.level1Complete == true)
+            {
+                GameObject.Find("Level 1").GetComponent<Button>().enabled = true;
+            }
+
+            if (StateNameController.level2Complete == false)
+            {
+                GameObject.Find("Level 2").GetComponent<Button>().enabled = false;
+            }
+            else if (StateNameController.level2Complete == true)
+            {
+                GameObject.Find("Level 2").GetComponent<Button>().enabled = true;
+            }
+        }
+
         if (Input.GetKeyDown(KeyCode.V))
         {
             StateNameController.isComplete = !StateNameController.isComplete;
+        }
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            StateNameController.level1Complete = true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            StateNameController.level2Complete = true;
         }
     }
 

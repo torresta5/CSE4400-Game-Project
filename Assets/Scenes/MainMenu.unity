@@ -2276,6 +2276,7 @@ MonoBehaviour:
   isJesus: 0
   difficulty: Normal
   extrasMenu: {fileID: 1714815879}
+  levelSelectMenu: {fileID: 1343225140}
 --- !u!1 &539405228
 GameObject:
   m_ObjectHideFlags: 0
