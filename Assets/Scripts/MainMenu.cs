@@ -40,7 +40,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-       SceneManager.LoadSceneAsync(1);
+       SceneManager.LoadSceneAsync(2);
     }
 
     public void QuitGame()
@@ -50,44 +50,35 @@ public class MainMenu : MonoBehaviour
 
     public void JesusOnButton()
     {
-        //isJesus = true;
-        //Debug.Log("Jesus is here!");
         StateNameController.isJesus = true;
-        //Debug.Log(StateNameController.isJesus);
     }
 
     public void JesusOffButton()
     {
-        //isJesus = false;
-        //Debug.Log("Farewell Jesus");
         StateNameController.isJesus = false;
-        //Debug.Log(StateNameController.isJesus);
     }
 
     public void EasyButton()
     {
         difficulty = "Easy";
-        //Debug.Log(difficulty);
         StateNameController.difficulty = difficulty;
     }
 
     public void NormalButton()
     {
         difficulty = "Normal";
-        //Debug.Log(difficulty);
         StateNameController.difficulty = difficulty;
     }
 
     public void HardButton()
     {
         difficulty = "Hard";
-        //Debug.Log(difficulty);
         StateNameController.difficulty = difficulty;
     }
 
     public void LevelOneButton()
     {
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(2);
     }
 
 

@@ -9,6 +9,6 @@ public class EndMenu : MonoBehaviour
 
     public void MainMenuReturn()
     {
-        SceneManager.LoadSceneAsync(0);
+        SceneManager.LoadSceneAsync(1);
     }
 }
