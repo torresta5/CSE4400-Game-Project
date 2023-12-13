@@ -24,37 +24,37 @@ public class MainMenu : MonoBehaviour
     public void JesusOnButton()
     {
         isJesus = true;
-        Debug.Log("Jesus is here!");
+        //Debug.Log("Jesus is here!");
         StateNameController.isJesus = true;
-        Debug.Log(StateNameController.isJesus);
+        //Debug.Log(StateNameController.isJesus);
     }
 
     public void JesusOffButton()
     {
         isJesus = false;
-        Debug.Log("Farewell Jesus");
+        //Debug.Log("Farewell Jesus");
         StateNameController.isJesus = false;
-        Debug.Log(StateNameController.isJesus);
+        //Debug.Log(StateNameController.isJesus);
     }
 
     public void EasyButton()
     {
         difficulty = "Easy";
-        Debug.Log(difficulty);
+        //Debug.Log(difficulty);
         StateNameController.difficulty = difficulty;
     }
 
     public void NormalButton()
     {
         difficulty = "Normal";
-        Debug.Log(difficulty);
+        //Debug.Log(difficulty);
         StateNameController.difficulty = difficulty;
     }
 
     public void HardButton()
     {
         difficulty = "Hard";
-        Debug.Log(difficulty);
+        //Debug.Log(difficulty);
         StateNameController.difficulty = difficulty;
     }
 }
