@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.K))
         {
-            AddMeter();
+            StateNameController.level1Complete = true;
         }
 
 

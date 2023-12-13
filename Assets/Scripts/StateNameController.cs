@@ -11,4 +11,6 @@ public class StateNameController : MonoBehaviour
     public static int storyIndex = 1;
 
     public static bool isComplete = false;
+
+    public static bool level1Complete = false;
 }
