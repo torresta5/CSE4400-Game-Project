@@ -57,4 +57,9 @@ public class MainMenu : MonoBehaviour
         //Debug.Log(difficulty);
         StateNameController.difficulty = difficulty;
     }
+
+    public void LevelOneButton()
+    {
+        SceneManager.LoadSceneAsync(1);
+    }
 }

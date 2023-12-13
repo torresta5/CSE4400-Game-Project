@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
 
         if(StateNameController.isJesus == false)
         {
-            //head.SetActive(false);
+            head.SetActive(false);
             Debug.Log(StateNameController.isJesus);
         }
 
