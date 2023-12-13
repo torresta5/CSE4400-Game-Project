@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    public bool isJesus = false;
+
     public void StartGame()
     {
        SceneManager.LoadSceneAsync(1);
@@ -14,5 +17,17 @@ public class MainMenu : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void JesusOnButton()
+    {
+        isJesus = true;
+        Debug.Log("Jesus is here!");
+    }
+
+    public void JesusOffButton()
+    {
+        isJesus = false;
+        Debug.Log("Farewell Jesus");
     }
 }
