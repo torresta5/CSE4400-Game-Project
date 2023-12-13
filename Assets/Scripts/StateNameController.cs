@@ -7,4 +7,6 @@ public class StateNameController : MonoBehaviour
     public static bool isJesus;
 
     public static string difficulty = "Normal";
+
+    public static int storyIndex = 1;
 }
