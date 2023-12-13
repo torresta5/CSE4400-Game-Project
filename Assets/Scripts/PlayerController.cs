@@ -37,7 +37,8 @@ public class PlayerController : MonoBehaviour
     public int currentMeter;
     public Bullet bullet;
 
-    public GameObject head;
+    public GameObject beard;
+    public GameObject robe;
 
     // Start is called before the first frame update
     private void Start()
@@ -50,7 +51,8 @@ public class PlayerController : MonoBehaviour
 
         if(StateNameController.isJesus == false)
         {
-            head.SetActive(false);
+            beard.SetActive(false);
+            robe.SetActive(false);
             Debug.Log(StateNameController.isJesus);
         }
 
