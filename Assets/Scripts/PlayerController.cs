@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 mouseWorldPosition;
 
     public int jumpSpeed;
+    public float runSpeed = 15f;
     public float KBForce;
     public float KBCounter;
     public float KBTotalTime;
@@ -77,7 +78,7 @@ public class PlayerController : MonoBehaviour
 
         if(KBCounter <= 0)
         {
-            rb.velocity = new Vector2(directionX * 15f, rb.velocity.y);
+            rb.velocity = new Vector2(directionX * runSpeed, rb.velocity.y);
         }
         else
         {
