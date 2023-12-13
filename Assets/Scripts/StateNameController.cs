@@ -9,4 +9,6 @@ public class StateNameController : MonoBehaviour
     public static string difficulty = "Normal";
 
     public static int storyIndex = 1;
+
+    public static bool isComplete = false;
 }
