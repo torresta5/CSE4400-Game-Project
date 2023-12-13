@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 5026748979158208677}
   - component: {fileID: 7668709615820369087}
   - component: {fileID: 8774913620173273751}
+  - component: {fileID: 4762941758400796363}
   m_Layer: 0
   m_Name: Ranged Fighter(Sprite)
   m_TagString: Enemy
@@ -242,7 +243,24 @@ MonoBehaviour:
   bullet: {fileID: 1758404581807429377, guid: d0a310e745b3d2f4bac429a96f17a61b, type: 3}
   bulletSpawn: {fileID: 7436140587985998683}
   patrolRange: 10
+  attackRange: 20
+  moveSpeed: 5
   flip: 0
+--- !u!114 &4762941758400796363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993131386117329550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8cecdfa82b44744e98befb6c7628c72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  currentHealth: 0
+  playerController: {fileID: 0}
 --- !u!1 &4353654660643073888
 GameObject:
   m_ObjectHideFlags: 0
