@@ -19,6 +19,19 @@ public class PlayerHealth : MonoBehaviour
 
     private void Start()
     {
+        if(StateNameController.difficulty == "Easy")
+        {
+            numOfHearts = 9;
+        }
+        else if(StateNameController.difficulty == "Normal")
+        {
+            numOfHearts = 6;
+        }
+        else if(StateNameController.difficulty == "Hard")
+        {
+            numOfHearts = 3;
+        }
+
         health = numOfHearts;
     }
 

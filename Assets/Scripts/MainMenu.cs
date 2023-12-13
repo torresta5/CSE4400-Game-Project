@@ -41,17 +41,20 @@ public class MainMenu : MonoBehaviour
     {
         difficulty = "Easy";
         Debug.Log(difficulty);
+        StateNameController.difficulty = difficulty;
     }
 
     public void NormalButton()
     {
         difficulty = "Normal";
         Debug.Log(difficulty);
+        StateNameController.difficulty = difficulty;
     }
 
     public void HardButton()
     {
         difficulty = "Hard";
         Debug.Log(difficulty);
+        StateNameController.difficulty = difficulty;
     }
 }
