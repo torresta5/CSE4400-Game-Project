@@ -73,6 +73,12 @@ public class PlayerController : MonoBehaviour
 
         //Debug.Log(mouseWorldPosition);
 
+        if(Input.GetKeyDown(KeyCode.V))
+        {
+            StateNameController.level1Complete = true;
+            StateNameController.level2Complete = true;
+        }
+
         directionX = Input.GetAxisRaw("Horizontal");
 
         if(KBCounter <= 0)
