@@ -73,6 +73,11 @@ public class PlayerController : MonoBehaviour
             StateNameController.level1Complete = true;
         }
 
+        if(Input.GetKeyDown(KeyCode.U)) 
+        {
+            StateNameController.level2Complete = true;
+        }
+
 
         mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPosition.z = 0;

@@ -166,7 +166,7 @@ public class AimAndShoot : MonoBehaviour
             Loadout[currentWeapon].color = new(1f, 1f, 1f, 0.5f);
             currentWeapon = 1;
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha3) && currentWeapon != 2)
+        else if (Input.GetKeyDown(KeyCode.Alpha3) && currentWeapon != 2 && StateNameController.level2Complete == true)
         {
             weapons[2].SetActive(true);
             weapons[currentWeapon].SetActive(false);
