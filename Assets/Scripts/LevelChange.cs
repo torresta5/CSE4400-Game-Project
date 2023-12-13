@@ -22,6 +22,10 @@ public class LevelChange : MonoBehaviour
             {
                 StateNameController.level2Complete = true;
             }
+            else if (level == 3)
+            {
+                StateNameController.level3Complete = true;
+            }
         }
 
 

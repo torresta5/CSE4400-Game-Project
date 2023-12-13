@@ -49,6 +49,15 @@ public class MainMenu : MonoBehaviour
             {
                 GameObject.Find("Level 2").GetComponent<Button>().enabled = true;
             }
+
+            if (StateNameController.level3Complete == false)
+            {
+                GameObject.Find("Level 3").GetComponent<Button>().enabled = false;
+            }
+            else if (StateNameController.level3Complete == true)
+            {
+                GameObject.Find("Level 3").GetComponent<Button>().enabled = true;
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.V))
@@ -64,6 +73,11 @@ public class MainMenu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.U))
         {
             StateNameController.level2Complete = true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            StateNameController.level3Complete = true;
         }
     }
 

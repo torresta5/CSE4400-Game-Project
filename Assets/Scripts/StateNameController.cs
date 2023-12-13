@@ -14,4 +14,5 @@ public class StateNameController : MonoBehaviour
 
     public static bool level1Complete = false;
     public static bool level2Complete = false;
+    public static bool level3Complete = false;
 }
