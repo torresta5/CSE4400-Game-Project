@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -35,7 +36,6 @@ public class PlayerController : MonoBehaviour
     public SpecialMeter specialMeter;
     public int currentMeter;
     public Bullet bullet;
-    public MainMenu mainMenu;
 
     public GameObject head;
 
@@ -46,9 +46,9 @@ public class PlayerController : MonoBehaviour
         coll = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
 
-        if(mainMenu.isJesus == false)
+        if(StateNameController.isJesus == false)
         {
-            head.SetActive(false);
+            Debug.Log(StateNameController.isJesus);
         }
 
         currentMeter = 0;
@@ -72,7 +72,7 @@ public class PlayerController : MonoBehaviour
         mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPosition.z = 0;
 
-        Debug.Log(mouseWorldPosition);
+        //Debug.Log(mouseWorldPosition);
 
         directionX = Input.GetAxisRaw("Horizontal");
 

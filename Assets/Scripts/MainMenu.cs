@@ -23,11 +23,15 @@ public class MainMenu : MonoBehaviour
     {
         isJesus = true;
         Debug.Log("Jesus is here!");
+        StateNameController.isJesus = true;
+        Debug.Log(StateNameController.isJesus);
     }
 
     public void JesusOffButton()
     {
         isJesus = false;
         Debug.Log("Farewell Jesus");
+        StateNameController.isJesus = false;
+        Debug.Log(StateNameController.isJesus);
     }
 }
