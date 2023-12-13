@@ -9,6 +9,8 @@ public class MainMenu : MonoBehaviour
 
     public bool isJesus = false;
 
+    public string difficulty = "Normal";
+
     public void StartGame()
     {
        SceneManager.LoadSceneAsync(1);
@@ -33,5 +35,23 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Farewell Jesus");
         StateNameController.isJesus = false;
         Debug.Log(StateNameController.isJesus);
+    }
+
+    public void EasyButton()
+    {
+        difficulty = "Easy";
+        Debug.Log(difficulty);
+    }
+
+    public void NormalButton()
+    {
+        difficulty = "Normal";
+        Debug.Log(difficulty);
+    }
+
+    public void HardButton()
+    {
+        difficulty = "Hard";
+        Debug.Log(difficulty);
     }
 }
