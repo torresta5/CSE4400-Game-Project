@@ -419,6 +419,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Demon
       objectReference: {fileID: 0}
+    - target: {fileID: 8447098190997613685, guid: 827f950160316a646b3124a8ad14ce8f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8447098190997613689, guid: 827f950160316a646b3124a8ad14ce8f, type: 3}
       propertyPath: startingPoint
       value: 
@@ -1050,6 +1054,10 @@ PrefabInstance:
     - target: {fileID: 6702560725904881506, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: m_Name
       value: Zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 6702560725904881506, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8842674838701275574, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: maxHealth
