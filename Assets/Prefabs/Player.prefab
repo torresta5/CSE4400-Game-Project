@@ -630,6 +630,7 @@ MonoBehaviour:
   mainCamera: {fileID: 6027854100897693863}
   isFacingLeft: 0
   jumpSpeed: 10
+  runSpeed: 15
   KBForce: 10
   KBCounter: 0
   KBTotalTime: 0.2
@@ -3160,14 +3161,6 @@ PrefabInstance:
     - target: {fileID: 7652099671518931046, guid: 15ed280e0947783459977131df73d70b, type: 3}
       propertyPath: m_RootOrder
       value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 7652099671518931046, guid: 15ed280e0947783459977131df73d70b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7652099671518931046, guid: 15ed280e0947783459977131df73d70b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7652099671518931046, guid: 15ed280e0947783459977131df73d70b, type: 3}
       propertyPath: m_LocalPosition.x
