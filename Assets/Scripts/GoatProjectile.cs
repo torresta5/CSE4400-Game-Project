@@ -24,7 +24,7 @@ public class GoatProjectile : MonoBehaviour
         // check if collide with Player or Ground layer
         if (collision.gameObject.CompareTag("Player"))
         {
-            anim.SetBool("Explosion", true);
+            //anim.SetBool("Explosion", true);
             Collider2D collider = Physics2D.OverlapCircle(transform.position, 4f);
             /*
             if (collider.gameObject.CompareTag("Player")) 
@@ -34,18 +34,18 @@ public class GoatProjectile : MonoBehaviour
             */
             collision.gameObject.GetComponent<PlayerHealth>().takeDamage();
             Destroy(gameObject);
-            anim.SetBool("Explosion", false);
+            //anim.SetBool("Explosion", false);
         }
         else if (collision.gameObject.layer == 6)
         {
-            anim.SetBool("Explosion", true);
+            //anim.SetBool("Explosion", true);
             Collider2D collider = Physics2D.OverlapCircle(transform.position, 4f);
             if (collider.gameObject.CompareTag("Player"))
             {
                 collider.gameObject.GetComponent<PlayerHealth>().takeDamage();
             }
             Destroy(gameObject);
-            anim.SetBool("Explosion", false);
+            //anim.SetBool("Explosion", false);
         }
     }
 }
