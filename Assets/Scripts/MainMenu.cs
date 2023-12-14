@@ -124,5 +124,15 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadSceneAsync(2);
     }
 
+    public void LevelTwoButton()
+    {
+        SceneManager.LoadSceneAsync(4);
+    }
+
+    public void LevelThreeButton()
+    {
+        SceneManager.LoadSceneAsync(6);
+    }
+
 
 }
