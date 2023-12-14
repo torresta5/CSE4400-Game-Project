@@ -58,7 +58,7 @@ public class RangedHunterMovement : MonoBehaviour
     private void RotateWeapon()
     {
         //direction = transform.position - player.transform.position;
-        direction = player.transform.position - transform.position;
+        direction = GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>().transform.position - bulletSpawn.transform.position;
         hunterGun.transform.right = direction;
         bulletSpawn.transform.right = direction;
         if(transform.localScale.x < 0)
@@ -97,7 +97,7 @@ public class RangedHunterMovement : MonoBehaviour
 
     private void Patrol()
     {
-        if ((transform.localScale.x < 0 && patrol1) || (patrol2 && transform.localScale.x > 0))
+        if ((transform.localScale.x > 0 && patrol1) || (patrol2 && transform.localScale.x < 0))
         {
             Vector3 localScale = transform.localScale;
             localScale.x *= -1;
@@ -139,9 +139,9 @@ public class RangedHunterMovement : MonoBehaviour
     {     
         Vector3 scale = transform.localScale;
 
-        if (player.transform.position.x > transform.position.x)
+        if (player.transform.position.x < transform.position.x)
         {
-            scale.x = Mathf.Abs(scale.x) * -1 * (flip ? -1 : 0);
+            scale.x = Mathf.Abs(scale.x) * -1 * (flip ? -1 : 1);
         } 
         else 
         {
