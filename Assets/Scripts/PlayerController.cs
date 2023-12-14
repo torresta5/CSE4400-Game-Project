@@ -41,9 +41,13 @@ public class PlayerController : MonoBehaviour
     public GameObject beard;
     public GameObject robe;
 
+    private AudioSource src;
+    [SerializeReference] private AudioClip jumpSFX, dashSFX;
+
     // Start is called before the first frame update
     private void Start()
     {
+        src = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
@@ -74,6 +78,12 @@ public class PlayerController : MonoBehaviour
 
         //Debug.Log(mouseWorldPosition);
 
+        if(Input.GetKeyDown(KeyCode.V))
+        {
+            StateNameController.level1Complete = true;
+            StateNameController.level2Complete = true;
+        }
+
         directionX = Input.GetAxisRaw("Horizontal");
 
         if(KBCounter <= 0)
@@ -102,6 +112,8 @@ public class PlayerController : MonoBehaviour
             isJumping = true;
             jumpTimeCounter = jumpTime;
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
+            src.clip = jumpSFX;
+            src.Play();
             //anim.SetBool("jumping", true);
 
         }
@@ -200,6 +212,8 @@ public class PlayerController : MonoBehaviour
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
         rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
+        src.clip = dashSFX;
+        src.Play();
         yield return new WaitForSeconds(dashingTime);
         rb.gravityScale = originalGravity;
         isDashing = false;

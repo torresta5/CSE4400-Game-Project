@@ -17,6 +17,9 @@ public class PlayerHealth : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
+    private AudioSource audiosrc;
+    [SerializeReference] private AudioClip hiss;
+
     private void Start()
     {
         if(StateNameController.difficulty == "Easy")
@@ -33,6 +36,8 @@ public class PlayerHealth : MonoBehaviour
         }
 
         health = numOfHearts;
+
+        audiosrc = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -72,6 +77,8 @@ public class PlayerHealth : MonoBehaviour
     public void takeDamage()
     {
         health -= 1;
+        audiosrc.clip = hiss;
+        audiosrc.Play();
         if(health <= 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
