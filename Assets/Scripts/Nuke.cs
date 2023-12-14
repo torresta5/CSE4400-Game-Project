@@ -13,7 +13,7 @@ public class Nuke : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Boss")
         {
             collision.gameObject.GetComponent<EnemyHealth>().TakeDamage(30);
         }
