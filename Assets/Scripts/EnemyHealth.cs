@@ -31,6 +31,7 @@ public class EnemyHealth : MonoBehaviour
         {
             Destroy(gameObject);
             SceneManager.LoadSceneAsync(6);
+            StateNameController.isComplete = true;
         }
 
         if(currentHealth <= 0)
