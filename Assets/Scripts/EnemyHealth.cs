@@ -30,7 +30,7 @@ public class EnemyHealth : MonoBehaviour
         if(tag == "Boss" && currentHealth <= 0)
         {
             Destroy(gameObject);
-            SceneManager.LoadSceneAsync(6);
+            SceneManager.LoadSceneAsync(8);
             StateNameController.isComplete = true;
         }
 
