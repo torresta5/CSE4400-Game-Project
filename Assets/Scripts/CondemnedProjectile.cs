@@ -41,7 +41,7 @@ public class CondemnedProjectile : MonoBehaviour
         }
         else if (collision.gameObject.layer == 6) 
         {
-            anim.SetBool("Explosion", true);
+            //anim.SetBool("Explosion", true);
             Collider2D collider = Physics2D.OverlapCircle(transform.position, 4f);
             if (collider.gameObject.CompareTag("Player"))
             {
