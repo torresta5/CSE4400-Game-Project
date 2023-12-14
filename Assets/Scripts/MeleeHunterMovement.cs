@@ -17,7 +17,9 @@ public class MeleeHunterMovement : MonoBehaviour
 
     private bool patrol1 = true;
     private bool patrol2 = false;
-    private bool canAttack = false;    
+    private bool canAttack = false;
+
+    private Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +27,7 @@ public class MeleeHunterMovement : MonoBehaviour
         rgbd = GetComponent<Rigidbody2D>();
         patrolPoint = transform.position.x;
         player = GameObject.FindGameObjectWithTag("Player");
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
