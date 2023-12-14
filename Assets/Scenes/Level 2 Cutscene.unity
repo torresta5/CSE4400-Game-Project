@@ -561,5 +561,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50e45213b9cee84d9071c304acb9035, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeTime: 50
+  changeTime: 20
   sceneName: Level 2
