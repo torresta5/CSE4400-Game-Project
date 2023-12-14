@@ -1576,6 +1576,10 @@ PrefabInstance:
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6333876914014541454, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
+      propertyPath: nuke
+      value: 
+      objectReference: {fileID: 9136619072485142062, guid: ed825278a828ba24eba5b76c4bcfb59d, type: 3}
+    - target: {fileID: 6333876914014541454, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
       propertyPath: bullet
       value: 
       objectReference: {fileID: 1758404581807429377, guid: aa7d472176c37164dbf6bdb5c5050fa3, type: 3}
