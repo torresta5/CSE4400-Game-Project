@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Hitbox
   - Boss
+  - Boss Projectile
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -19,8 +21,8 @@ TagManager:
   - Player
   - Nuke
   - Projectile
+  - Boss Projectile
   - Boss
-  - 
   - 
   - 
   - 

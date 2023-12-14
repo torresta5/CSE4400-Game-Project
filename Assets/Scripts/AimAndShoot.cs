@@ -34,9 +34,13 @@ public class AimAndShoot : MonoBehaviour
 
     public SpecialMeter specialMeter;
 
+    [SerializeField] private GameObject crosshair;
+
+    
     private void Start()
     {
         audiosrc = GetComponent<AudioSource>();
+        Cursor.visible = false;
         numWeapons = weapons.Length;
         for (int i = 0; i < numWeapons; i++)
         {
@@ -60,6 +64,7 @@ public class AimAndShoot : MonoBehaviour
     {
 
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        crosshair.transform.position = mousePosition; 
         direction = mousePosition - (Vector2)gun.transform.position;
         gun.transform.right = direction;
 
