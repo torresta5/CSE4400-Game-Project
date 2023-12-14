@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -25,6 +26,13 @@ public class EnemyHealth : MonoBehaviour
     public void TakeDamage(int amount)
     {
         currentHealth -= amount;
+        
+        if(tag == "Boss" && currentHealth <= 0)
+        {
+            Destroy(gameObject);
+            SceneManager.LoadSceneAsync(6);
+        }
+
         if(currentHealth <= 0)
         {
             Destroy(gameObject);

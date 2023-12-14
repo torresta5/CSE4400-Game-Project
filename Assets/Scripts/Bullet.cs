@@ -30,5 +30,11 @@ public class Bullet : MonoBehaviour
             collision.gameObject.GetComponent<PlayerHealth>().takeDamage();
             Destroy(gameObject);
         }
+        else if (collision.gameObject.tag == "Boss")
+        {
+            collision.gameObject.GetComponent<EnemyHealth>().TakeDamage(1);
+            collision.gameObject.GetComponent<EnemyHealth>().playerController.AddMeter();
+            Destroy(gameObject);
+        }
     }
 }

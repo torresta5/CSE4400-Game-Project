@@ -1937,6 +1937,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goat
       objectReference: {fileID: 0}
+    - target: {fileID: 7613729552954651433, guid: 8e2be72a18377e143ad3ad6f10a78aad, type: 3}
+      propertyPath: m_TagString
+      value: Boss
+      objectReference: {fileID: 0}
     - target: {fileID: 7613729552954651437, guid: 8e2be72a18377e143ad3ad6f10a78aad, type: 3}
       propertyPath: m_RootOrder
       value: 19
