@@ -89,16 +89,19 @@ public class PlayerController : MonoBehaviour
         if(KBCounter <= 0)
         {
             rb.velocity = new Vector2(directionX * runSpeed, rb.velocity.y);
+            anim.SetBool("hurt", false);
         }
         else
         {
             if(knockFromRight == true)
             {
                 rb.velocity = new Vector2(-KBForce, KBForce);
+                anim.SetBool("hurt", true);
             }
             if(knockFromRight == false)
             {
                 rb.velocity = new Vector2(KBForce, KBForce);
+                anim.SetBool("hurt", true);
             }
 
             KBCounter -= Time.deltaTime;

@@ -17127,13 +17127,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4487690468206606873, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4487690468206606873, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4487690468206606873, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4487690468206606873, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6027854100897693784, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6027854100897693784, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.0231311
+      value: 3.023131
       objectReference: {fileID: 0}
     - target: {fileID: 6027854100897693863, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
       propertyPath: orthographic size
