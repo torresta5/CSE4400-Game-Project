@@ -53,7 +53,7 @@ public class MeleeHunterMovement : MonoBehaviour
     private void Patrol()
     {
         // makes sure the melee hunter is facing the correct direction
-        if ((transform.localScale.x < 0 && patrol1) || (patrol2 && transform.localScale.x > 0))
+        if ((transform.localScale.x > 0 && patrol1) || (patrol2 && transform.localScale.x < 0))
         {
             Vector3 localScale = transform.localScale;
             localScale.x *= -1;
@@ -96,9 +96,9 @@ public class MeleeHunterMovement : MonoBehaviour
     {
         Vector3 scale = transform.localScale;
 
-        if (player.transform.position.x > transform.position.x)
+        if (player.transform.position.x < transform.position.x)
         {
-            scale.x = Mathf.Abs(scale.x) * -1 * (flip ? -1 : 0);
+            scale.x = Mathf.Abs(scale.x) * (flip ? -1 : 1);
         }
         else
         {
