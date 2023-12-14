@@ -46,7 +46,7 @@ public class CondemnedMovement : MonoBehaviour
     {
         Vector3 scale = transform.localScale;
 
-        if (player.transform.position.x > transform.position.x)
+        if (player.transform.position.x < transform.position.x)
         {
             scale.x = Mathf.Abs(scale.x) * -1 * (flip ? -1 : 0);
         }
