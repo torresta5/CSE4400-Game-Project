@@ -3296,8 +3296,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.066299915, y: 0.18905002, z: 0}
-    m_Extent: {x: 4.593, y: 1.28795, z: 0}
+    m_Center: {x: 0.063549995, y: 0.18805003, z: 0}
+    m_Extent: {x: 4.58385, y: 1.27255, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -20043,8 +20043,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -2.0307, y: -0.41640002, z: 0}
-    m_Extent: {x: 4.2705, y: 1.8768001, z: 0}
+    m_Center: {x: -2.03445, y: -0.41014993, z: 0}
+    m_Extent: {x: 4.2796497, y: 1.87085, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -24792,8 +24792,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.05739999, y: 0.18555003, z: 0}
-    m_Extent: {x: 4.5891, y: 1.2874501, z: 0}
+    m_Center: {x: 0.06190014, y: 0.18400002, z: 0}
+    m_Extent: {x: 4.599, y: 1.2851, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -26195,8 +26195,29 @@ PrefabInstance:
       propertyPath: playerController
       value: 
       objectReference: {fileID: 528337085}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8447098190997613691, guid: 827f950160316a646b3124a8ad14ce8f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 827f950160316a646b3124a8ad14ce8f, type: 3}
+--- !u!1 &1997214191 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8447098190997613685, guid: 827f950160316a646b3124a8ad14ce8f, type: 3}
+  m_PrefabInstance: {fileID: 1997214190}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1997214192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997214191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8cecdfa82b44744e98befb6c7628c72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 1
+  currentHealth: 0
+  playerController: {fileID: 528337085}
 --- !u!1001 &2000070806
 PrefabInstance:
   m_ObjectHideFlags: 0
