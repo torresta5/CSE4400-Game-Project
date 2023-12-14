@@ -339,7 +339,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930910547}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: f38c5c4a2896d9148833e7130cc5a9ad, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 15365704e27c14c4d96e4b6d4b6826ad, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -562,7 +562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50e45213b9cee84d9071c304acb9035, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeTime: 20
+  changeTime: 45
   sceneName: Level 3
 --- !u!82 &1939149022
 AudioSource:
@@ -574,7 +574,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c56cc1247a0b9b74d88d34389a8ee299, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8741c373d9646e94a86028dfc96ea214, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
