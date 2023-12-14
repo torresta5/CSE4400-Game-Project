@@ -2,30 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CondemnedProjectile : MonoBehaviour
+public class GoatProjectile : MonoBehaviour
 {
-
+    private Rigidbody2D rb;
     private Animator anim;
-
-    private Rigidbody2D rgbd;
     // Start is called before the first frame update
     void Start()
     {
-        rgbd = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        rgbd.velocity = transform.right * 25;
-        Destroy(gameObject, 5f);
+        rb.velocity = transform.right * 125;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // check if collide with Player or Ground layer
-        if (collision.gameObject.CompareTag("Player")) 
+        if (collision.gameObject.CompareTag("Player"))
         {
             anim.SetBool("Explosion", true);
             Collider2D collider = Physics2D.OverlapCircle(transform.position, 4f);
@@ -39,7 +36,7 @@ public class CondemnedProjectile : MonoBehaviour
             Destroy(gameObject);
             anim.SetBool("Explosion", false);
         }
-        else if (collision.gameObject.layer == 6) 
+        else if (collision.gameObject.layer == 6)
         {
             anim.SetBool("Explosion", true);
             Collider2D collider = Physics2D.OverlapCircle(transform.position, 4f);

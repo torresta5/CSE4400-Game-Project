@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 3668076644635882532}
   - component: {fileID: 1773799151817344621}
   - component: {fileID: 4653033909943536391}
-  - component: {fileID: 3865965609516695906}
   - component: {fileID: 1953898095775098893}
+  - component: {fileID: -8830931121348528231}
   m_Layer: 9
-  m_Name: Condemned Projectile
+  m_Name: Goat Projectile 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -125,18 +125,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3865965609516695906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3505641330955177181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a2727b72707a9a4691b30f5ee87a618, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &1953898095775098893
 Animator:
   serializedVersion: 5
@@ -158,3 +146,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-8830931121348528231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3505641330955177181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 721a607cf1441f044abf4d66af4cfc5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

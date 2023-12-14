@@ -48,7 +48,7 @@ public class CondemnedMovement : MonoBehaviour
 
         if (player.transform.position.x < transform.position.x)
         {
-            scale.x = Mathf.Abs(scale.x) * -1 * (flip ? -1 : 0);
+            scale.x = Mathf.Abs(scale.x) * -1 * (flip ? -1 : 1);
         }
         else
         {
@@ -81,7 +81,7 @@ public class CondemnedMovement : MonoBehaviour
 
     private void Rotate()
     {
-        projectileSpawn.right = player.transform.position - transform.position;
+        projectileSpawn.right = player.transform.position - projectileSpawn.position;
         if (transform.localScale.x < 0)
         {
             projectileSpawn.transform.right *= -1;
