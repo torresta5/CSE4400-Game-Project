@@ -36,5 +36,9 @@ public class Bullet : MonoBehaviour
             collision.gameObject.GetComponent<EnemyHealth>().playerController.AddMeter();
             Destroy(gameObject);
         }
+        else if (collision.gameObject.CompareTag("Boss Projectile"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
