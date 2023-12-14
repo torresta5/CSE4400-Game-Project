@@ -8,11 +8,11 @@ public class CondemnedMovement : MonoBehaviour
     [SerializeField] private Transform projectileSpawn; 
     private GameObject player;
 
-    private float attackRange = 40;
+    [SerializeField] private float attackRange = 40;
     private float attackTime = 0;
 
     private bool canShoot = false;
-    private bool flip = true;
+    [SerializeField] private bool flip = true;
 
     private AudioSource src;
     [SerializeReference] private AudioClip spit;
