@@ -14,9 +14,13 @@ public class CondemnedMovement : MonoBehaviour
     private bool canShoot = false;
     private bool flip = true;
 
+    private AudioSource src;
+    [SerializeReference] private AudioClip spit;
+
     // Start is called before the first frame update
     void Start()
     {
+        src = GetComponent<AudioSource>();
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
@@ -68,6 +72,8 @@ public class CondemnedMovement : MonoBehaviour
         }
         else
         {
+            src.clip = spit;
+            src.Play();
             Instantiate(condemnedProjectile, projectileSpawn.position, projectileSpawn.rotation);
             canShoot = false;
         }

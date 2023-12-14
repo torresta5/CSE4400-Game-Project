@@ -23,6 +23,8 @@ public class AimAndShoot : MonoBehaviour
 
     [SerializeField] private Transform[] bulletSpawn;
 
+    [SerializeField] private AudioClip[] weaponShoot;
+    private AudioSource audiosrc;
     private Vector2 mousePosition;
     private Vector2 direction;
 
@@ -34,6 +36,7 @@ public class AimAndShoot : MonoBehaviour
 
     private void Start()
     {
+        audiosrc = GetComponent<AudioSource>();
         numWeapons = weapons.Length;
         for (int i = 0; i < numWeapons; i++)
         {
@@ -125,16 +128,24 @@ public class AimAndShoot : MonoBehaviour
         if( (Input.GetButtonDown("Fire1") && canShoot && currentWeapon != 1)  || (Input.GetButton("Fire1") && canShoot && currentWeapon == 1))
         {
             canShoot = false;
+            audiosrc.clip = weaponShoot[currentWeapon];
+            // shotgun
             if (currentWeapon == 2)
             {
+                audiosrc.Play();
                 for(int i = currentWeapon; i < bulletSpawn.Length; i++)
                 {
                     Instantiate(bullet, bulletSpawn[i].position, bulletSpawn[i].rotation);
                 }
             }
+            //holy cannon
             else if(currentWeapon == 3)
             {
+                audiosrc.Play();
+                
+               
                 Instantiate(nuke, bulletSpawn[currentWeapon].position, bulletSpawn[currentWeapon].rotation = new Quaternion(0, 0, 0, 0));
+
                 weapons[0].SetActive(true);
                 weapons[currentWeapon].SetActive(false);
                 Loadout[currentWeapon].color = new(1f, 1f, 1f, 0.5f);
@@ -142,8 +153,10 @@ public class AimAndShoot : MonoBehaviour
                 specialMeter.slider.value = 0;
 
             }
+            // pistol and LMG
             else
             {
+                audiosrc.Play();
                 Instantiate(bullet, bulletSpawn[currentWeapon].position, bulletSpawn[currentWeapon].rotation);
             }
         }
@@ -157,7 +170,6 @@ public class AimAndShoot : MonoBehaviour
             weapons[currentWeapon].SetActive(false);
             Loadout[currentWeapon].color = new(1f, 1f, 1f, 0.5f);
             currentWeapon = 0;
-            
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2) && currentWeapon != 1 && StateNameController.level1Complete == true)
         {

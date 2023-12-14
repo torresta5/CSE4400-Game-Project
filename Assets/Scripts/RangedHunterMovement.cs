@@ -25,9 +25,13 @@ public class RangedHunterMovement : MonoBehaviour
     private bool patrol1 = true;
     private bool patrol2 = false;
 
+    private AudioSource src;
+    [SerializeReference] private AudioClip load, shoot;
+
     // Start is called before the first frame update
     void Start()
     {
+        src = GetComponent<AudioSource>();
         rgbd = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
         patrolPoint = transform.position.x;
@@ -77,12 +81,15 @@ public class RangedHunterMovement : MonoBehaviour
             if (attackTime >= 3f)
             {
                 attackTime = 0;
+                src.clip = load;
+                src.Play();
                 canShoot = true;
             }
         }
         else
         {
-            
+            src.clip = shoot;
+            src.Play(0);
             Instantiate(bullet, bulletSpawn.position, bulletSpawn.rotation);
             canShoot = false;
         }
