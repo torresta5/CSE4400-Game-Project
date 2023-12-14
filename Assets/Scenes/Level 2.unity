@@ -2992,8 +2992,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.06845021, y: 0.19105, z: 0}
-    m_Extent: {x: 4.5960503, y: 1.28285, z: 0}
+    m_Center: {x: 0.058050156, y: 0.18829995, z: 0}
+    m_Extent: {x: 4.59195, y: 1.2769, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -4799,7 +4799,7 @@ PrefabInstance:
     - target: {fileID: 8842674838701275574, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: playerController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 528337085}
     - target: {fileID: 8887846244333158514, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: m_Mass
       value: 1
@@ -6710,6 +6710,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2326326966225551799, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
   m_PrefabInstance: {fileID: 1300276322}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &528337085 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 138120217629998302, guid: 1e1a387d71cc43748ae8cfa63c8fd2c5, type: 3}
+  m_PrefabInstance: {fileID: 1300276322}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15d0327cab680a14e95ab141171cf317, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &532138027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11091,7 +11102,7 @@ PrefabInstance:
     - target: {fileID: 8842674838701275574, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: playerController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 528337085}
     - target: {fileID: 8887846244333158514, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: m_Mass
       value: 1
@@ -13639,7 +13650,7 @@ PrefabInstance:
     - target: {fileID: 8842674838701275574, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: playerController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 528337085}
     - target: {fileID: 8887846244333158514, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: m_Mass
       value: 1
@@ -18098,8 +18109,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -2.02495, y: -0.4102, z: 0}
-    m_Extent: {x: 4.27115, y: 1.8791, z: 0}
+    m_Center: {x: -2.0348501, y: -0.4084, z: 0}
+    m_Extent: {x: 4.27795, y: 1.8773999, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -19693,7 +19704,7 @@ PrefabInstance:
     - target: {fileID: 8842674838701275574, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: playerController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 528337085}
     - target: {fileID: 8887846244333158514, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: m_Mass
       value: 1
@@ -21244,7 +21255,7 @@ PrefabInstance:
     - target: {fileID: 8842674838701275574, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: playerController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 528337085}
     - target: {fileID: 8887846244333158514, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: m_Mass
       value: 1
@@ -22579,8 +22590,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.06124997, y: 0.18080002, z: 0}
-    m_Extent: {x: 4.5949497, y: 1.2797, z: 0}
+    m_Center: {x: 0.070599794, y: 0.19454998, z: 0}
+    m_Extent: {x: 4.5910997, y: 1.27735, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -23365,7 +23376,7 @@ PrefabInstance:
     - target: {fileID: 449359159, guid: f6445c5c678f340428ce24cd380f20e6, type: 3}
       propertyPath: playerController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 528337085}
     - target: {fileID: 4799598590867077468, guid: f6445c5c678f340428ce24cd380f20e6, type: 3}
       propertyPath: m_Name
       value: Melee Hunter
@@ -23900,7 +23911,7 @@ PrefabInstance:
     - target: {fileID: 8842674838701275574, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: playerController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 528337085}
     - target: {fileID: 8887846244333158514, guid: d2be2a6b0caa2bb48ab0ad1fce960136, type: 3}
       propertyPath: m_Mass
       value: 1
