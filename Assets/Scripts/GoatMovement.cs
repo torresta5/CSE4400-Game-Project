@@ -46,7 +46,7 @@ public class GoatMovement : MonoBehaviour
         if (!canShoot)
         {
             attackTime += Time.deltaTime;
-            if (attackTime >= 1f)
+            if (attackTime >= 0.5f)
             {
                 attackTime = 0;
                 canShoot = true;

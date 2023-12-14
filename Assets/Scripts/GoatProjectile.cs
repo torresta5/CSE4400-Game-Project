@@ -36,6 +36,11 @@ public class GoatProjectile : MonoBehaviour
             Destroy(gameObject);
             //anim.SetBool("Explosion", false);
         }
+        else if (collision.gameObject.CompareTag("Projectile")) 
+        {
+            Destroy(gameObject);
+        }
+
         else if (collision.gameObject.layer == 6)
         {
             //anim.SetBool("Explosion", true);
