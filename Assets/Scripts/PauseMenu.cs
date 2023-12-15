@@ -11,6 +11,12 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenu;
 
+    private void Awake()
+    {
+        if(!Cursor.visible)
+        Cursor.visible = true;
+    }
+
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))

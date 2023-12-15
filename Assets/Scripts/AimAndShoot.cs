@@ -36,11 +36,14 @@ public class AimAndShoot : MonoBehaviour
 
     [SerializeField] private GameObject crosshair;
 
-    
+    private void Awake()
+    {
+        Cursor.visible = false;
+    }
     private void Start()
     {
         audiosrc = GetComponent<AudioSource>();
-        Cursor.visible = false;
+        
         numWeapons = weapons.Length;
         for (int i = 0; i < numWeapons; i++)
         {

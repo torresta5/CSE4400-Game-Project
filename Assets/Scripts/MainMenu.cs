@@ -16,6 +16,14 @@ public class MainMenu : MonoBehaviour
     public GameObject levelSelectMenu;
 
 
+    private void Awake()
+    {
+        if(!Cursor.visible)
+        {
+            Cursor.visible = true;
+        }
+    }
+
     private void Update()
     {
         if (extrasMenu.activeInHierarchy)
