@@ -107,7 +107,7 @@ MonoBehaviour:
   - {fileID: 7689991799798843781}
   - {fileID: 7815617319364718239}
   m_Bounds:
-    m_Center: {x: -0.34365177, y: 0.027384758, z: 0}
+    m_Center: {x: -0.3436532, y: 0.027383804, z: 0}
     m_Extent: {x: 6.887063, y: 9.973185, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -279,7 +279,7 @@ MonoBehaviour:
   - {fileID: 259330750593006286}
   - {fileID: 7815617319364718239}
   m_Bounds:
-    m_Center: {x: 0.0008544922, y: 0.06380749, z: 0}
+    m_Center: {x: 0.00084495544, y: 0.063807964, z: 0}
     m_Extent: {x: 27.319153, y: 7.170358, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -685,7 +685,7 @@ MonoBehaviour:
   - {fileID: 7689991799798843781}
   - {fileID: 259330750593006286}
   m_Bounds:
-    m_Center: {x: -0.037420273, y: -0.008182526, z: 0}
+    m_Center: {x: -0.037416458, y: -0.008182526, z: 0}
     m_Extent: {x: 14.370417, y: 22.191826, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -897,7 +897,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 50
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -1107,7 +1107,7 @@ MonoBehaviour:
   - {fileID: 7689991799798843781}
   - {fileID: 7815617319364718239}
   m_Bounds:
-    m_Center: {x: 0.013175964, y: 0.00288105, z: 0}
+    m_Center: {x: 0.013173103, y: 0.00288105, z: 0}
     m_Extent: {x: 10.133162, y: 7.0271215, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -1223,7 +1223,7 @@ MonoBehaviour:
   - {fileID: 7815617319364718239}
   m_Bounds:
     m_Center: {x: 0.00065135956, y: 0.06999779, z: 0}
-    m_Extent: {x: 10.439365, y: 16.480005, z: 0}
+    m_Extent: {x: 10.439365, y: 16.480003, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
